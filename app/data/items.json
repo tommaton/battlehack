@@ -1,0 +1,15 @@
+{
+    "items": {
+        "id": 1,
+        "title": "Lawn Mower",
+        "description" : "Petrol powered lawn mower",
+        "category": "garden",
+        "userId": 1234
+        "images": [
+                {"alt": "Lawn Mower", "path": "image/lawn1.jpg"},
+                {"alt": "Lawn Mower", "path": "image/lawn2.jpg"},
+                {"alt": "Lawn Mower", "path": "image/lawn3.jpg"}
+            ]
+        },
+        "payment": "paypal"
+}}
