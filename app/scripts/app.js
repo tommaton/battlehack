@@ -7,6 +7,10 @@ angular.module('battlehackApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/view2', {
+        templateUrl: 'views/view2.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
