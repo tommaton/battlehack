@@ -1,8 +1,8 @@
 {
         "id": 6,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "Dyson Vacuum cleaner",
+        "description": "Dyson DC33 Multi Floor Upright Vacuum Cleaner For Every Floor Type",
+        "category": "other",
         "user": {
             "id": "06",
             "name": "Thomas Maton",
@@ -13,16 +13,12 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
+                "alt": "Dyson",
+                "path": "images/products/dyson1.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Dyson",
+                "path": "images/products/dyson2.jpg"
             }
         ],
         "payment": "paypal"
