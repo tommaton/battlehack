@@ -1,6 +1,9 @@
 <div class="product-detail-view view">
-    <h2>{{product.title}}</h2>
-    <img src="{{product.images[0].path}}" alt="{{product.title}}" />
+    <header>
+      <h2>{{product.title}}</h2>
+      <img src="{{product.images[0].path}}" alt="{{product.title}}" />
+    </header>
+
     <div class="call-to-action">
       <a ng-href="#/confirmDetails/{{product.id}}" class="btn pull-left btn-success btn-primary btn-lg">Book Item</a>
       <a ng-href="#/contactUser/{{product.user.id}}/product/{{product.id}}"class="btn pull-right btn-info btn-lg">Contact</a>
