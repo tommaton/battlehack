@@ -31,6 +31,10 @@ window.APP.controller('ProductdetailsCtrl', ['$scope', '$routeParams', 'globalSe
                 center: [parseFloat($scope.product.user.location.lat), parseFloat($scope.product.user.location.long)]
             }
         );
+
+        var standardMarker = new nokia.maps.map.StandardMarker([parseFloat($scope.product.user.location.lat), parseFloat($scope.product.user.location.long)]);
+        // Next we need to add it to the map's object collection so it will be rendered onto the map.
+        map.objects.add(standardMarker);
     };
 
     $scope.getProduct = function(productId) {

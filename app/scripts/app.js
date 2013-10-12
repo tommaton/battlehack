@@ -81,6 +81,10 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/contactUser.html',
       controller: 'ContactuserCtrl'
     })
+    .when('/map', {
+      templateUrl: 'views/map.html',
+      controller: 'MapCtrl'
+    })
     .when('/respondToOffer', {
       templateUrl: 'views/respondToOffer.html',
       controller: 'RespondtoofferCtrl'
