@@ -15,7 +15,7 @@ window.APP = angular.module('battlehackApp', []);
         templateUrl: 'views/productListing.html',
         controller: 'ProductlistingCtrl'
       })
-      .when('/productDetails', {
+      .when('/product/:id', {
         templateUrl: 'views/productDetails.html',
         controller: 'ProductdetailsCtrl'
       })
