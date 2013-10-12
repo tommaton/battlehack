@@ -1,4 +1,7 @@
-angular.module('xmpl.service', [])
-    .value('sendSms', {
+require('twilio')
 
-    });
+function twilio () {
+
+}
+
+module.exports = twilioService;
