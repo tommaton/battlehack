@@ -90,6 +90,10 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/respondToOffer.html',
       controller: 'RespondtoofferCtrl'
     })
+    .when('/makeOffer', {
+      templateUrl: 'views/makeOffer.html',
+      controller: 'MakeofferCtrl'
+    })
     .otherwise({
       redirectTo: '/'
     });
