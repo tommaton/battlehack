@@ -191,6 +191,7 @@ Home Styles
             background: #5d9bd1;
             border-radius: 0;
             border: none;
+            height: 62px;
 
             &:hover {
                 background: #5d9bd1;
@@ -198,6 +199,12 @@ Home Styles
 
             &:active {
                 background: #428BCA;
+            }
+
+            p {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
         }
     }
