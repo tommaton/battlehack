@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
-    
+
 </head>
   <body ng-app="battlehackApp" ng-controller="AppCtrl">
     <!--[if lt IE 7]>
@@ -30,20 +30,22 @@
     <!-- Add your site or application content here -->
     <nav class="navigation">
         <ul>
-            <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-list"></span> Listings</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-circle-arrow-left"></span> Logout</a></li>
+            <li><a href="#/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="#/home"><span class="glyphicon glyphicon-list"></span> Categories</a></li>
+            <li><a href="#/settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+            <li><a ng-click="logOut()"><span class="glyphicon glyphicon-circle-arrow-left"></span> Logout</a></li>
         </ul>
     </nav>
 
-    <header class="header">
+    <header class="header" ng-show="user.isLoggedIn">
         <a href="#" class="nav-icon">&#9776;</a>
 
         <div class="btn-group">
           <button type="button" class="btn btn-default">List</button>
           <button type="button" class="btn btn-default">Map</button>
         </div>
+
+        <a href="#" class="glyphicon glyphicon-search"></a>
     </header>
 
     <div class="container" ng-view=""></div>
@@ -74,7 +76,6 @@
     <script src="scripts/services/hereMaps.js"></script>
 
     <script src="scripts/controllers/home.js"></script>
-    <script src="scripts/controllers/productListing.js"></script>
     <script src="scripts/controllers/productDetails.js"></script>
     <script src="scripts/controllers/login.js"></script>
     <script src="scripts/controllers/confirmationSuccess.js"></script>

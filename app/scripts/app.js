@@ -2,7 +2,7 @@
 
 window.APP = angular.module('battlehackApp', []);
 
-window.APP.controller('AppCtrl', ['$scope', function($scope) {
+window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $location) {
     function init() {
         $scope.user = {
             isLoggedIn: false
@@ -10,7 +10,20 @@ window.APP.controller('AppCtrl', ['$scope', function($scope) {
 
     }
 
+    $scope.logOut = function() {
+      console.log('logging out user');
+      $scope.user = {
+        isLoggedIn: false,
+        email: null,
+        password: null
+      }
+
+      $location.path('login');
+
+    };
+
     $scope.isUserLoggedIn = function() {
+        console.log('is user logged in?', $scope.user.isLoggedIn);
         if(!$scope.user.isLoggedIn) {
             return false;
         } else {
@@ -30,10 +43,6 @@ window.APP.config(function ($routeProvider) {
     .when('/home', {
       templateUrl: 'views/home.html',
       controller: 'HomeCtrl'
-    })
-    .when('/productListing', {
-      templateUrl: 'views/productListing.html',
-      controller: 'ProductlistingCtrl'
     })
     .when('/product/:id', {
       templateUrl: 'views/productDetails.html',

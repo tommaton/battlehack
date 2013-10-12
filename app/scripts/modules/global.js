@@ -12,12 +12,17 @@ neighbourly.core.global = {
     },
     handleNavigation: function () {
         var $navBtn = $('.nav-icon'),
-            $navigation = $('.navigation');
+            $navigation = $('.navigation'),
+            $navItem = $navigation.find('a');
 
         $navBtn.on('click', function(e) {
             e.preventDefault();
 
             $navigation.toggleClass('open');
+        });
+
+        $navItem.on('click', function() {
+            $navigation.removeClass('open');
         });
     },
     getLocation: function () {

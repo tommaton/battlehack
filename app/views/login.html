@@ -2,7 +2,6 @@
   <h1>Neighbour<strong class="glyphicon glyphicon-home"></strong>ly</h1>
 
   <form id="loginform" name="loginform" role="form">
-    <p>Please log in below.</p>
     <div class="form-group">
       <label for="email">Email:</label>
       <input type="email" class="form-control" id="email" data-ng-model="user.email" ng-required="true" required placeholder="Email">
@@ -14,5 +13,7 @@
     </div>
 
     <button type="button" data-ng-click="login(user.email, user.password)" data-ng-disabled="loginform.$invalid" class="btn btn-primary btn-lg btn-block">Sign in</button>
+
+    <p>
   </form>
 </div>
