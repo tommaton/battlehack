@@ -16,10 +16,11 @@ exports.sendMessage = function (toNumber, message, callback) {
                     console.log('Message sent on:');
                     console.log(message);
 
-                    callback('{"status":"Sent","sent":true,"date":' + message.dateCreated + '}');
+                    var messageResponse =
+                    callback('{"status":"Sent","sent":true,"date":"' + message.dateCreated + '","msg_sid":"' + message.sid + '"}');
                 }
                 else {
-                    callback('{"status":"failed","error":error.message}');
+                    callback('{"status":"failed","error":"' + error.message + '"}');
                 }
             });
 }

@@ -1,3 +1,3 @@
-exports.justgiving = function () {
+exports.justgivingService = function () {
 
 }
