@@ -8,6 +8,7 @@ Helpers
 General Styles
 ============================================================ */
 
+
 html,
 body {
   margin: 0;
@@ -21,10 +22,11 @@ body {
 }
 
 .container {
+    clear: both;
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0;
     transition: transform 0.3s ease;
 }
 
@@ -43,12 +45,17 @@ Header Styles
 ============================================================ */
 
 .header {
-    padding: 10px 15px;
+    float: left;
+    width: 100%;
+    height: 45px;
     color: #fff;
     background: #428BCA;
     transition: transform 0.3s ease;
 
     .nav-icon {
+        position: absolute;
+        top: 10px;
+        left: 15px;
         font-size: 16px;
         color: #fff;
         text-decoration: none;
@@ -58,6 +65,27 @@ Header Styles
         }
     }
 
+    .btn-group {
+        display: block;
+        width: 171px;
+        margin: 0 auto;
+
+        button {
+            padding: 0 30px;
+            height: 45px;
+            border: none;
+            color: #fff;
+            background: #337ab7;
+
+            &:first-child {
+                margin-right: 2px;
+            }
+
+            &:focus {
+                background: #3071aa;
+            }
+        }
+    }
 }
 
 /* ============================================================
@@ -96,7 +124,7 @@ Navigation Styles
         background: #214d75 ;
 
         &:active {
-            background: #279bbd;
+            background: #255682;
         }
     }
 
@@ -116,6 +144,8 @@ Login Styles
 ============================================================ */
 
 .login-view {
+    padding: 20px;
+
     h1 {
         color: #428BCA;
         font-size: 50px;
@@ -146,5 +176,39 @@ Home Styles
 ============================================================ */
 
 .home-view {
+    .list-group {
+        margin: 0;
+        border-bottom: 1px solid #428BCA;
 
+        a.active {
+            background: #5d9bd1;
+            border-radius: 0;
+            border: none;
+
+            &:hover {
+                background: #5d9bd1;
+            }
+
+            &:active {
+                background: #428BCA;
+            }
+        }
+    }
+}
+
+/* ============================================================
+Mapping Styles
+============================================================ */
+
+.mapping {
+    height: 200px;
+    position: relative;
+}
+
+#mapping-container {
+    width: 100%;
+    height: 200px;
+    left: 0;
+    top: 0;
+    position: absolute;
 }

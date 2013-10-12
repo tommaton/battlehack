@@ -14,6 +14,8 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    
 </head>
   <body ng-app="battlehackApp" ng-controller="AppCtrl">
     <!--[if lt IE 7]>
@@ -37,12 +39,21 @@
 
     <header class="header">
         <a href="#" class="nav-icon">&#9776;</a>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-default">List</button>
+          <button type="button" class="btn btn-default">Map</button>
+        </div>
     </header>
 
     <div class="container" ng-view=""></div>
 
+    <!-- mapping library -->
+    <script src="http://js.api.here.com/se/2.5.3/jsl.js" type="text/javascript" charset="utf-8"></script>
+
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+
     <!-- endbuild -->
 
     <!-- build:js scripts/modules.js -->
