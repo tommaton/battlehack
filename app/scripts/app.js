@@ -8,7 +8,19 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
             isLoggedIn: false
         };
 
+
+      $scope.isLoading = false;
+
+      $scope.$on('LOADING',function(){
+          $scope.isLoading = true;
+      });
+
+      $scope.$on('NOTLOADING',function(){
+          $scope.isLoading = false;
+      });
+
     }
+
 
     $scope.logOut = function() {
       console.log('logging out user');

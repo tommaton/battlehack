@@ -1,12 +1,14 @@
 'use strict';
 
-window.APP.controller('ProductdetailsCtrl', ['$scope', '$routeParams', 'globalServices', function ($scope, $routeParams, globalServices) {
+window.APP.controller('ProductdetailsCtrl', ['$scope', '$routeParams', 'globalServices', '$location', function ($scope, $routeParams, globalServices, $location) {
     function init() {
-        $scope.productId = $routeParams.id;
+        if(!$scope.$parent.user.isLoggedIn){
+            $location.path('login');
+        } else {
+            $scope.productId = $routeParams.id;
 
-        $scope.getProduct($scope.productId);
-
-        
+            $scope.getProduct($scope.productId);
+        }
     }
 
     $scope.loadMap = function() {
@@ -32,7 +34,9 @@ window.APP.controller('ProductdetailsCtrl', ['$scope', '$routeParams', 'globalSe
     };
 
     $scope.getProduct = function(productId) {
+        $scope.$emit('LOADING');
         globalServices.getProduct(productId).then(function(response) {
+            $scope.$emit('NOTLOADING');
             $scope.product = response;
             $scope.loadMap();
         });
