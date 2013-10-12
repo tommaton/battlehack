@@ -33,3 +33,4 @@ neighbourly.core.global = {
 
 
 //neighbourly.core.global.init();
+neighbourly.core.global.handleNavigation();
