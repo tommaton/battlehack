@@ -6,7 +6,7 @@ window.APP.service('Twillio', ['$http', '$q', function Twillio($http, $q) {
     this.sendTxt = function(num, msg) {
          var deferred = $q.defer();
 
-        $http.post('http://localhost:3000/twilio', 'tonum=' + num + '&tomessage=' + encodeURI(msg))
+        $http.post('http://localhost:3000/twilio', {"tonum": num, "tomessage": msg})
             .success(function(data) {
                 return deferred.resolve(data);
             })

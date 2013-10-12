@@ -86,6 +86,10 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/contactUser.html',
       controller: 'ContactuserCtrl'
     })
+    .when('/respondToOffer', {
+      templateUrl: 'views/respondToOffer.html',
+      controller: 'RespondtoofferCtrl'
+    })
     .otherwise({
       redirectTo: '/'
     });

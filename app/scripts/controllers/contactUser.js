@@ -25,7 +25,7 @@ angular.module('battlehackApp')
 
     $scope.sendTxt = function() {
         $scope.$emit('LOADING');
-        Twillio.sendTxt('441325952405', 'Testing Text Message Service').then(function(response) {
+        Twillio.sendTxt('447837043238', 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has requested the use of your ' + $scope.product.title + '. Visit: http://localhost:8000/#/home').then(function(response) {
             $scope.$emit('NOTLOADING');
             $scope.response = response;
             console.log(response);
