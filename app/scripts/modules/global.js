@@ -5,18 +5,29 @@ neighbourly.core = neighbourly.core || {};
 
 neighbourly.core.global = {
     init: function () {
+        var $window = $(window),
+            $container = $('.container');
+
+        $container.css('height', $window.height());
+
         if (!localStorage.getItem("currentLocation")) {
             neighbourly.core.global.getLocation();
         }
+        neighbourly.core.global.handleNavigation();
     },
     handleNavigation: function () {
         var $navBtn = $('.nav-icon'),
-            $navigation = $('.navigation');
+            $navigation = $('.navigation'),
+            $navItem = $navigation.find('a');
 
         $navBtn.on('click', function(e) {
             e.preventDefault();
 
             $navigation.toggleClass('open');
+        });
+
+        $navItem.on('click', function() {
+            $navigation.removeClass('open');
         });
     },
     getLocation: function () {
@@ -33,5 +44,4 @@ neighbourly.core.global = {
     }
 };
 
-//neighbourly.core.global.init();
-neighbourly.core.global.handleNavigation();
+neighbourly.core.global.init();

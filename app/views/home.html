@@ -1,8 +1,8 @@
-<div class="home-view">
-    <div class="list-group">
-      <a href="#" class="list-group-item active">
-        <h4 class="list-group-item-heading">List group item heading</h4>
-        <p class="list-group-item-text">...</p>
+<div class="home-view view">
+    <div class="list-group" ng-repeat="product in products">
+      <a href="#/product/{{product.id}}" class="list-group-item active">
+        <h4 class="list-group-item-heading">{{product.title}}</h4>
+        <p class="list-group-item-text">{{product.description}}</p>
       </a>
     </div>
 </div>

@@ -1,26 +1,26 @@
-<div class="product-detail">
+<div class="product-detail-view view">
     <h2>{{product.title}}</h2>
-    <img src="http://www.placehold.it/320x200" alt="{{product.title}}"/>
+    <img src="{{product.images[0].path}}" alt="{{product.title}}" />
     <div class="call-to-action">
-      <button type="button" class="btn pull-left btn-success btn-primary btn-lg">Book Item</button>
-      <button type="button" class="btn pull-right btn-info btn-lg">Contact Neighbour</button>
+      <a ng-href="#/confirmDetails/{{product.id}}" class="btn pull-left btn-success btn-primary btn-lg">Book Item</a>
+      <a ng-href="#/contactUser/{{product.user.id}}/product/{{product.id}}"class="btn pull-right btn-info btn-lg">Contact</a>
     </div>
     <div class="panel panel-default">
       <div class="panel-heading"><strong>Description</strong></div>
       <div class="panel-body">
-        Panel content
+        {{product.description}}
       </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default mapping">
       <div class="panel-heading"><strong>Location</strong></div>
-      <div class="panel-body">
-        Panel content
+      <div class="panel-body" id="mapping-container">
+
       </div>
     </div>
     <div class="panel panel-default">
       <div class="panel-heading"><strong>Neighbour</strong></div>
       <div class="panel-body">
-        Panel content
+        {{product.user.name}}
       </div>
     </div>
     <button type="button" class="btn btn-primary btn-lg btn-block">Share</button>

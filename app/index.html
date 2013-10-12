@@ -14,6 +14,8 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+
 </head>
   <body ng-app="battlehackApp" ng-controller="AppCtrl">
     <!--[if lt IE 7]>
@@ -28,36 +30,37 @@
     <!-- Add your site or application content here -->
     <nav class="navigation">
         <ul>
-            <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-list"></span> Listings</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-circle-arrow-left"></span> Logout</a></li>
+            <li><a href="#/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="#/home"><span class="glyphicon glyphicon-list"></span> Categories</a></li>
+            <li><a href="#/settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+            <li><a ng-click="logOut()"><span class="glyphicon glyphicon-circle-arrow-left"></span> Logout</a></li>
         </ul>
     </nav>
 
-    <header class="header">
+    <header class="header" ng-show="user.isLoggedIn">
         <a href="#" class="nav-icon">&#9776;</a>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-default">List</button>
+          <button type="button" class="btn btn-default">Map</button>
+        </div>
+
+        <a href="#" class="glyphicon glyphicon-search"></a>
     </header>
 
     <div class="container" ng-view=""></div>
 
+    <div data-ng-show="isLoading" style="display: none;">
+        <img src="http://www.placehold.it/25x25"/>
+        <h3>LOADING...</h3>
+    </div>
+
+    <!-- mapping library -->
+    <script src="http://js.api.here.com/se/2.5.3/jsl.js" type="text/javascript" charset="utf-8"></script>
+
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
 
-    <!-- build:js scripts/plugins.js -->
-    <script src="bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-alert.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-dropdown.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-tooltip.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-modal.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-transition.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-button.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-popover.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-typeahead.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-carousel.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-scrollspy.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
-    <script src="bower_components/bootstrap-sass/js/bootstrap-tab.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/modules.js -->
@@ -77,9 +80,7 @@
     <script src="scripts/services/justGiving.js"></script>
     <script src="scripts/services/hereMaps.js"></script>
 
-    <script src="scripts/controllers/application.js"></script>
     <script src="scripts/controllers/home.js"></script>
-    <script src="scripts/controllers/productListing.js"></script>
     <script src="scripts/controllers/productDetails.js"></script>
     <script src="scripts/controllers/login.js"></script>
     <script src="scripts/controllers/confirmationSuccess.js"></script>
@@ -87,6 +88,7 @@
 
     <script src="scripts/modules/global.js"></script>
     <script src="scripts/controllers/confirmDetails.js"></script>
+    <script src="scripts/controllers/contactUser.js"></script>
     <!-- endbuild -->
 </body>
 </html>
