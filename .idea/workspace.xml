@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2ff996b-9720-4d8f-bb7d-b423f53ed1b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/env.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/config.js" afterPath="$PROJECT_DIR$/nodeapp/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/services/paypal.js" afterPath="$PROJECT_DIR$/nodeapp/services/paypal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/public/crossdomain.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/routes/paypalRoute.js" afterPath="$PROJECT_DIR$/nodeapp/routes/paypalRoute.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/server.js" afterPath="$PROJECT_DIR$/nodeapp/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/routes/twilioRoute.js" afterPath="$PROJECT_DIR$/nodeapp/routes/twilioRoute.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="battlehack.iws" />
@@ -46,7 +43,7 @@
       <file leaf-file-name="paypalRoute.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodeapp/routes/paypalRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="57" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="12" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -61,10 +58,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodeapp/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="3" selection-start="964" selection-end="964" vertical-scroll-proportion="0.5726257" vertical-offset="100" max-vertical-offset="918">
+            <state line="16" column="34" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crossdomain.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nodeapp/public/crossdomain.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="22" selection-start="104" selection-end="104" vertical-scroll-proportion="0.07122905" vertical-offset="0" max-vertical-offset="716">
               <folding />
             </state>
           </provider>
@@ -124,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/dist/routes/paypalRoute.js" />
         <option value="$PROJECT_DIR$/dist/routes/justgivingRoute.js" />
         <option value="$PROJECT_DIR$/dist/server.js" />
         <option value="$PROJECT_DIR$/dist/routes/twilioRoute.js" />
@@ -136,10 +141,11 @@
         <option value="$PROJECT_DIR$/nodeapp/services/twilio.js" />
         <option value="$PROJECT_DIR$/nodeapp/routes/twilioRoute.js" />
         <option value="$PROJECT_DIR$/nodeapp/services/paypal.js" />
-        <option value="$PROJECT_DIR$/nodeapp/routes/paypalRoute.js" />
         <option value="$PROJECT_DIR$/nodeapp/env.json" />
         <option value="$PROJECT_DIR$/nodeapp/config.js" />
         <option value="$PROJECT_DIR$/nodeapp/server.js" />
+        <option value="$PROJECT_DIR$/nodeapp/routes/paypalRoute.js" />
+        <option value="$PROJECT_DIR$/nodeapp/public/crossdomain.xml" />
       </list>
     </option>
   </component>
@@ -275,7 +281,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="nodeapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -447,13 +457,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/justGiving.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/paypal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="79" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
@@ -549,14 +552,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nodeapp/routes/paypalRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="57" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+        <state line="12" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nodeapp/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="3" selection-start="964" selection-end="964" vertical-scroll-proportion="0.5726257" vertical-offset="100" max-vertical-offset="918">
+        <state line="16" column="34" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeapp/public/crossdomain.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="22" selection-start="104" selection-end="104" vertical-scroll-proportion="0.07122905" vertical-offset="0" max-vertical-offset="716">
           <folding />
         </state>
       </provider>

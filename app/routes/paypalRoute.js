@@ -8,9 +8,6 @@ exports.route = function (request, response) {
 
         //Store to session
         request.session.paymentid = response.id;
-        var json = JSON.parse(response);
-
-        console.log(json);
 
         response.send(paymentDetails);
     });
