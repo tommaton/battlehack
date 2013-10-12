@@ -86,6 +86,10 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/contactUser.html',
       controller: 'ContactuserCtrl'
     })
+    .when('/map', {
+      templateUrl: 'views/map.html',
+      controller: 'MapCtrl'
+    })
     .otherwise({
       redirectTo: '/'
     });

@@ -41,8 +41,8 @@
         <a href="#" class="nav-icon">&#9776;</a>
 
         <div class="btn-group">
-          <button type="button" class="btn btn-default">List</button>
-          <button type="button" class="btn btn-default">Map</button>
+          <a href="#/home" class="btn btn-default">List</a>
+          <a href="#/map" class="btn btn-default">Map</a>
         </div>
 
         <a href="#" class="glyphicon glyphicon-search"></a>
@@ -50,7 +50,7 @@
 
     <div class="container" ng-view=""></div>
 
-    <div data-ng-show="isLoading" style="display: none;">
+    <div data-ng-show="isLoading">
         <img src="http://www.placehold.it/25x25"/>
         <h3>LOADING...</h3>
     </div>
@@ -89,6 +89,7 @@
     <script src="scripts/modules/global.js"></script>
     <script src="scripts/controllers/confirmDetails.js"></script>
     <script src="scripts/controllers/contactUser.js"></script>
+    <script src="scripts/controllers/map.js"></script>
     <!-- endbuild -->
 </body>
 </html>
