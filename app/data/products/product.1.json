@@ -1,0 +1,21 @@
+{
+        "id": 1,
+        "title": "Lawn Mower",
+        "description": "Petrol powered lawnmower",
+        "category": "garden",
+        "user": {
+            "id": "01",
+            "name": "Thomas Maton",
+            "location": {
+                "lat": "51.505151",
+                "long": "-0.021258"
+            }
+        },
+        "images": [
+            {
+                "alt": "LawnMower",
+                "path": "images/products/lawn1.jpg"
+            }
+        ],
+        "payment": "paypal"
+    }
