@@ -279,6 +279,27 @@ Mapping Styles
         width: 100%;
     }
 
+    header {
+        position: relative;
+        overflow: hidden;
+        max-height: 280px;
+    }
+
+    h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 10px 15px;
+        font-weight: lighter;
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        background: rgba(22,51,77,0.7);
+    }
+
     img {
         max-width: 100%;
     }
