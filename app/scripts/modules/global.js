@@ -5,6 +5,11 @@ neighbourly.core = neighbourly.core || {};
 
 neighbourly.core.global = {
     init: function () {
+        var $window = $(window),
+            $container = $('.container');
+
+        $container.css('height', $window.height());
+
         if (!localStorage.getItem("currentLocation")) {
             neighbourly.core.global.getLocation();
         }
