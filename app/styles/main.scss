@@ -36,6 +36,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 20px;
     overflow-y: scroll;
 }
 
@@ -167,8 +168,6 @@ Login Styles
 ============================================================ */
 
 .login-view {
-    padding: 20px;
-
     h1 {
         color: #428BCA;
         font-size: 50px;
@@ -199,6 +198,8 @@ Home Styles
 ============================================================ */
 
 .home-view {
+    padding: 0;
+
     .list-group {
         margin: 0;
         border-bottom: 1px solid #428BCA;
@@ -231,14 +232,24 @@ Home Styles
 Mapping Styles
 ============================================================ */
 
-.mapping {
-    height: 300px;
-    position: relative;
-}
+.product-detail-view {
+    .mapping {
+        height: 300px;
+        position: relative;
+    }
 
-#mapping-container {
-    display: block;    
-    height: 258px;
-    padding: 0;
-    width: 100%;
+    #mapping-container {
+        display: block;
+        height: 258px;
+        padding: 0;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .call-to-action .btn {
+        width: 50%;
+    }
 }
