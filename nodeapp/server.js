@@ -9,7 +9,6 @@ var express = require('express')
     , test = require('./routes/testRoute')
     , http = require('http')
     , path = require('path')
-    , MemStore = express.session.MemoryStore
     , app = express()
     , server = require('http').createServer(app)
 
@@ -22,9 +21,13 @@ app.configure(function(){
     app.use(express.methodOverride());
     app.use(app.router);
     app.use(express.static(path.join(__dirname, 'public')));
-    app.use(express.session({secret: '+p;jwD5%9][34y3|?r4th"8j8{R,y|', store: MemStore({
-        reapInterval: 60000 * 10
-    })}));
+    app.use(express.session({secret: '+p;jwD5%9][34y3|?r4th"8j8{R,y|'}));
+});
+
+app.all('/', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
 });
 
 app.configure('development', function(){
@@ -36,6 +39,7 @@ app.configure('production', function(){
 });
 
 app.post('/paypal', paypal.route);
+app.get('/paypal/execute', paypal.executeRoute);
 app.post('/twilio', twilio.route);
 app.get('/justgiving', justgiving.route);
 app.get('/test/:price/:description', test.route);

@@ -26,15 +26,28 @@ exports.paypal = function (price, description, callback) {
         }]
     };
 
-    paypal_sdk.payment.create(create_payment_json, function (err, res) {
-        if (err) {
-            throw err;
+    paypal_sdk.payment.create(create_payment_json, function (error, response) {
+        if (error) {
+            throw error;
         }
 
-        if (res) {
+        if (response) {
             console.log("Create Payment Response");
 
-            callback(res);
+            callback(response);
+        }
+    });
+}
+
+exports.executePayment = function (paymentId, payerId, callback) {
+    var payerIdJson = { "payer_id": payerId };
+
+    paypal_sdk.payment.execute(paymentId, payerIdJson, function(error, response){
+        if(error){
+            callback('Error: ' + error);
+        }
+        else{
+            callback(response);
         }
     });
 }
