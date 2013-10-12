@@ -4,12 +4,12 @@ neighbourly.core = neighbourly.core || {};
 neighbourly.core.global = {
     init: function() {
         if(!localStorage.getItem("currentLocation")) {
-            getLocation();
+            neighbourly.core.global.getLocation();
         }
     },
     getLocation: function() {        
         navigator.geolocation.getCurrentPosition(function(position) {
-            storeLocation(position.coords.latitude, position.coords.longitude);
+            neighbourly.core.global.storeLocation(position.coords.latitude, position.coords.longitude);
         }); 
     },
     storeLocation: function(latitude, longitude) {
