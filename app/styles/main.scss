@@ -80,6 +80,10 @@ Header Styles
             &:first-child {
                 margin-right: 2px;
             }
+
+            &:focus {
+                background: #3071aa;
+            }
         }
     }
 }
@@ -120,7 +124,7 @@ Navigation Styles
         background: #214d75 ;
 
         &:active {
-            background: #279bbd;
+            background: #255682;
         }
     }
 
