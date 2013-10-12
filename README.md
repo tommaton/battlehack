@@ -11,6 +11,10 @@ Attendees
 - Abid Din
 
 Getting Started
+
+Installing Yeoman
+- npm install -g yo
+- npm install -g generator-angular
 - npm install
 
 Run either
