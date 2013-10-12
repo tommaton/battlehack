@@ -8,7 +8,6 @@ Helpers
 General Styles
 ============================================================ */
 
-
 html,
 body {
   margin: 0;
@@ -120,19 +119,20 @@ Header Styles
         width: 55%;
         margin: 0 auto;
 
-        button {
+        .btn {
             padding: 0 30px;
             width: 49%;
             height: 45px;
             border: none;
             color: #fff;
+            line-height: 3;
             background: #337ab7;
 
             &:first-child {
                 margin-right: 2px;
             }
 
-            &:focus {
+            &:active {
                 background: #3071aa;
             }
         }
