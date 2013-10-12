@@ -1,10 +1,13 @@
 'use strict';
 
-angular.module('battlehackApp')
-  .controller('MakeofferCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+window.APP.controller('MakeofferCtrl', function ($scope) {
+    function init (){
+        if(!$scope.$parent.user.isLoggedIn){
+            $location.path('login');
+        } else {
+
+        }
+    }
+
+    init();
   });

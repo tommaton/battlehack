@@ -78,10 +78,6 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/confirmationFail.html',
       controller: 'ConfirmationfailCtrl'
     })
-    .when('/confirmDetails', {
-      templateUrl: 'views/confirmDetails.html',
-      controller: 'ConfirmdetailsCtrl'
-    })
     .when('/contactUser/:userId/product/:productId', {
       templateUrl: 'views/contactUser.html',
       controller: 'ContactuserCtrl'
