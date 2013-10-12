@@ -1,6 +1,6 @@
 var paypalModule = require("./../services/paypal")
 
-exports.paypalRoute = function (request, response) {
+exports.route = function (request, response) {
     var price = request.body.price;
     var description = request.body.description;
 

@@ -5,6 +5,7 @@
 var express = require('express')
     , paypal = require('./routes/paypalRoute')
     , twilio = require('./routes/twilioRoute')
+    , justgiving = require('./routes/justgivingRoute')
     , http = require('http')
     , path = require('path')
     , MemStore = express.session.MemoryStore
@@ -33,9 +34,9 @@ app.configure('production', function(){
     app.use(express.errorHandler());
 });
 
-app.post('/paypal', paypal.paypalRoute);
-app.post('/twilio', twilio.twilioRoute);
-//app.get('/justgiving', justgiving.donate);
+app.post('/paypal', paypal.route);
+app.post('/twilio', twilio.route);
+app.get('/justgiving', justgiving.route);
 
 server.listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));
