@@ -4,6 +4,7 @@ window.APP.controller('ProductlistingCtrl', ['$scope', 'globalServices', functio
     function init() {
         $scope.products = null;
         $scope.getProducts();
+        $scope.pageTitle = "Product Listings";
     }
     
     $scope.getProducts = function() {
