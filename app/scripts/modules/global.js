@@ -14,7 +14,6 @@ neighbourly.core.global = {
             neighbourly.core.global.getLocation();
         }
         neighbourly.core.global.handleNavigation();
-        neighbourly.core.global.loadMap();
     },
     handleNavigation: function () {
         var $navBtn = $('.nav-icon'),
@@ -42,19 +41,6 @@ neighbourly.core.global = {
             'longitude': longitude
         });
         localStorage.setItem('currentLocation', latLong);
-    },
-    loadMap: function() {
-
-        nokia.Settings.set('app_id', 'kmwpUb08UtDm0fNWVk7I');
-        nokia.Settings.set('app_code', 'olY6cOnIbswrXEgZ53cGUw');
-
-        var map = new nokia.maps.map.Display(
-            document.getElementById('mapping-container'), {
-                zoomLevel: 16,
-                center: [52.51, 13.4],
-                baseMapType: nokia.maps.map.Display.NORMAL
-            }
-        );
     }
 };
 
