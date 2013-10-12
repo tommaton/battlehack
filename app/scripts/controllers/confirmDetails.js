@@ -2,5 +2,13 @@
 
 angular.module('battlehackApp')
   .controller('ConfirmdetailsCtrl', function ($scope) {
-    $scope.pageTitle = 'Confirm Details';
+    function init() {
+        if(!$scope.$parent.user.isLoggedIn){
+            $location.path('login');
+        } else {
+
+        }
+    }
+
+    init();
   });

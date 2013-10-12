@@ -50,6 +50,11 @@
 
     <div class="container" ng-view=""></div>
 
+    <div data-ng-show="isLoading" style="display: none;">
+        <img src="http://www.placehold.it/25x25"/>
+        <h3>LOADING...</h3>
+    </div>
+
     <!-- mapping library -->
     <script src="http://js.api.here.com/se/2.5.3/jsl.js" type="text/javascript" charset="utf-8"></script>
 

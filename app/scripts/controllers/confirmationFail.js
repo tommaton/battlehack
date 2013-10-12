@@ -2,7 +2,11 @@
 
 window.APP.controller('ConfirmationfailCtrl', function ($scope) {
     function init() {
-        $scope.pageTitle = '';
+        if(!$scope.$parent.user.isLoggedIn){
+            $location.path('login');
+        } else {
+
+        }
     }
 
     init();
