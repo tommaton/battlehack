@@ -1,7 +1,7 @@
 {
         "id": 1,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
+        "title": "Petrol Lawn Mower",
+        "description": "McCulloch M46-125 Push 46cm Rotary Four Wheeled Petrol Lawnmower, B & S 450e series engine",
         "category": "garden",
         "user": {
             "id": "01",
