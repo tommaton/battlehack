@@ -2,8 +2,8 @@
     <h2>{{product.title}}</h2>
     <img src="{{product.images[0].path}}" alt="{{product.title}}" width="320" />
     <div class="call-to-action">
-      <button type="button" class="btn pull-left btn-success btn-primary btn-lg">Book Item</button>
-      <button type="button" class="btn pull-right btn-info btn-lg">Contact Neighbour</button>
+      <a ng-href="#/confirmDetails/{{product.id}}" class="btn pull-left btn-success btn-primary btn-lg">Book Item</a>
+      <a ng-href="#/contactUser/{{product.user.id}}/product/{{product.id}}"class="btn pull-right btn-info btn-lg">Contact Neighbour</a>
     </div>
     <div class="panel panel-default">
       <div class="panel-heading"><strong>Description</strong></div>

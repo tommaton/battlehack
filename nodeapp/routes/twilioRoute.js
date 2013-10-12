@@ -1,10 +1,12 @@
 var twilioModule = require("./../services/twilio")
 
-exports.twilioRoute = function (request, response) {
-    var to = request.body.to;
-    var message = request.body.message;
+exports.route = function (request, response) {
+    var toNumber = request.body.tonum;
+    var message = request.body.tomessage;
 
-    twilioModule.sendMessage(to, message, function(returned){
+    console.log(request);
+
+    twilioModule.sendMessage(toNumber, message, function(returned){
         response.send(returned);
     });
 };

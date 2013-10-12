@@ -1,5 +1,5 @@
-var paypalModule = require("././justgiving")
+var justgiving = require("./../services/justgiving")
 
-exports.justgivingRoute = function (request, response) {
+exports.route = function (request, response) {
 
 };

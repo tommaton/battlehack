@@ -1,5 +1,3 @@
-function justGivingService (opts) {
+exports.justgiving = function () {
 
 }
-
-module.exports = justGivingService;

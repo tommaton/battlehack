@@ -1,6 +1,25 @@
 'use strict';
 
 window.APP = angular.module('battlehackApp', []);
+
+window.APP.controller('AppCtrl', ['$scope', function($scope) {
+    function init() {
+        $scope.user = {
+            isLoggedIn: false
+        };
+
+    }
+
+    $scope.isUserLoggedIn = function() {
+        if(!$scope.user.isLoggedIn) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+
+    init();
+}]);
   
 window.APP.config(function ($routeProvider) {
   $routeProvider
@@ -35,6 +54,10 @@ window.APP.config(function ($routeProvider) {
     .when('/confirmDetails', {
       templateUrl: 'views/confirmDetails.html',
       controller: 'ConfirmdetailsCtrl'
+    })
+    .when('/contactUser/:userId/product/:productId', {
+      templateUrl: 'views/contactUser.html',
+      controller: 'ContactuserCtrl'
     })
     .otherwise({
       redirectTo: '/'

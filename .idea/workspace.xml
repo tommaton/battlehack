@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2ff996b-9720-4d8f-bb7d-b423f53ed1b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/services/justgiving.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/routes/justgivingRoute.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/services/paypal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/routes/paypalRoute.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/services/twilio.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/routes/twilioRoute.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/routes/testRoute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/config.js" afterPath="$PROJECT_DIR$/nodeapp/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/server.js" afterPath="$PROJECT_DIR$/nodeapp/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/services/twilio.js" afterPath="$PROJECT_DIR$/nodeapp/services/twilio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/routes/twilioRoute.js" afterPath="$PROJECT_DIR$/nodeapp/routes/twilioRoute.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="battlehack.iws" />
@@ -48,7 +46,7 @@
       <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodeapp/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="29" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+            <state line="13" column="40" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -57,7 +55,7 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodeapp/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="799">
+            <state line="38" column="8" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -66,7 +64,7 @@
       <file leaf-file-name="paypalRoute.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodeapp/routes/paypalRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="0" column="0" selection-start="0" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -75,7 +73,7 @@
       <file leaf-file-name="twilio.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodeapp/services/twilio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="41" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="24" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -84,7 +82,43 @@
       <file leaf-file-name="twilioRoute.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nodeapp/routes/twilioRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
+            <state line="4" column="30" selection-start="168" selection-end="168" vertical-scroll-proportion="0.09497207" vertical-offset="0" max-vertical-offset="716">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="172" column="0" selection-start="3765" selection-end="3765" vertical-scroll-proportion="0.0" vertical-offset="2988" max-vertical-offset="5389">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testRoute.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeapp/routes/testRoute.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="29" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="justgivingRoute.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeapp/routes/justgivingRoute.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="justgiving.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeapp/services/justgiving.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
               <folding />
             </state>
           </provider>
@@ -108,12 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/node/services/paypal.js" />
-        <option value="$PROJECT_DIR$/app/routes/paypal.js" />
-        <option value="$PROJECT_DIR$/app/services/paypal.js" />
-        <option value="$PROJECT_DIR$/app/server.js" />
-        <option value="$PROJECT_DIR$/app/scripts/services/paypal.js" />
-        <option value="$PROJECT_DIR$/dist/services/paypal.js" />
         <option value="$PROJECT_DIR$/dist/routes/paypal.js" />
         <option value="$PROJECT_DIR$/dist/config.js" />
         <option value="$PROJECT_DIR$/dist/routes/paypalRoute.js" />
@@ -122,6 +150,12 @@
         <option value="$PROJECT_DIR$/dist/routes/twilioRoute.js" />
         <option value="$PROJECT_DIR$/dist/services/twilio.js" />
         <option value="$PROJECT_DIR$/nodeapp/routes/paypalRoute.js" />
+        <option value="$PROJECT_DIR$/nodeapp/routes/justgivingRoute.js" />
+        <option value="$PROJECT_DIR$/nodeapp/services/justgiving.js" />
+        <option value="$PROJECT_DIR$/nodeapp/routes/testRoute.js" />
+        <option value="$PROJECT_DIR$/nodeapp/config.js" />
+        <option value="$PROJECT_DIR$/nodeapp/server.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/nodeapp/services/twilio.js" />
         <option value="$PROJECT_DIR$/nodeapp/routes/twilioRoute.js" />
       </list>
@@ -284,6 +318,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nodeapp/server.js" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -296,7 +333,7 @@
       <recent name="C:\Git\battlehack\node\services" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.BattleHack">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -319,14 +356,30 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
+      <node-js-remote-debug />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
-      <method />
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/nodeapp">
+      <browser start="true" url="" with-js-debugger="false" />
+      <method>
+        <option name="CoffeeScriptSourceMapTask" enabled="true" DIRECTORY_WITH_COFFEE_FILES_PATH="$PROJECT_DIR$" />
+      </method>
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="BattleHack" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/nodeapp">
+      <browser start="true" url="" with-js-debugger="false" />
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <method>
+        <option name="CoffeeScriptSourceMapTask" enabled="false" DIRECTORY_WITH_COFFEE_FILES_PATH="$PROJECT_DIR$" />
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.BattleHack" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -363,8 +416,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21625" sideWeight="0.671159" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21625" sideWeight="0.60107815" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39892185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39892185" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -386,23 +439,18 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/nodeapp/routes/twilioRoute.js</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node/services/justgiving.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeapp/services/justgiving.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node/services/twilio.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="30" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
@@ -416,20 +464,6 @@
           <folding>
             <marker date="1381580409119" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="148" selection-end="148" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5389">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -454,20 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodeapp/routes/justgivingRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="52" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeapp/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodeapp/services/paypal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="27" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
@@ -475,30 +495,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodeapp/server.js">
+    <entry file="file://$PROJECT_DIR$/nodeapp/services/justgiving.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="799">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeapp/routes/justgivingRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeapp/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="40" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="172" selection-end="172" vertical-scroll-proportion="0.17246377" vertical-offset="0" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nodeapp/routes/paypalRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+        <state line="0" column="0" selection-start="0" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeapp/routes/testRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="29" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="0" selection-start="3765" selection-end="3765" vertical-scroll-proportion="0.0" vertical-offset="2988" max-vertical-offset="5389">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nodeapp/services/twilio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+        <state line="24" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeapp/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="8" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nodeapp/routes/twilioRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
+        <state line="4" column="30" selection-start="168" selection-end="168" vertical-scroll-proportion="0.09497207" vertical-offset="0" max-vertical-offset="716">
           <folding />
         </state>
       </provider>
