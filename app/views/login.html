@@ -1,19 +1,19 @@
 <div class="login-view" data-animated="true">
   <h1>Neighbour.ly</h1>
 
-  <form id="login-form" role="form">
+  <form id="loginform" name="loginform" role="form">
     <p>Please log in below.</p>
 
     <div class="form-group">
       <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" ng-required="true" placeholder="Email">
+      <input type="email" class="form-control" id="email" data-ng-model="user.email" ng-required="true" required placeholder="Email">
     </div>
 
     <div class="form-group">
       <label for="password">Password:</label>
-      <input type="password" class="form-control" id="password" placeholder="Password">
+      <input type="password" class="form-control" data-ng-model="user.password" name="password" required id="password" placeholder="Password">
     </div>
 
-    <button type="button" data-ng-click="login()" class="btn btn-primary btn-lg btn-block">Sign in</button>
+    <button type="button" data-ng-click="login(user.email, user.password)" data-ng-disabled="loginform.$invalid" class="btn btn-primary btn-lg btn-block">Sign in</button>
   </form>
 </div>
