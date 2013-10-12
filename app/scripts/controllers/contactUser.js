@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('battlehackApp')
-  .controller('ContactuserCtrl', ['$scope', '$routeParams', '$location', 'globalServices', function ($scope, $routeParams, $location, globalServices) {
+  .controller('ContactuserCtrl', ['$scope', '$routeParams', '$location', 'globalServices', 'Twillio',  function ($scope, $routeParams, $location, globalServices, Twillio) {
     function init() {
         
         if(!$scope.$parent.user.isLoggedIn){
@@ -22,6 +22,15 @@ angular.module('battlehackApp')
             $scope.product = response;
         });
     };
+
+    $scope.sendTxt = function() {
+        $scope.$emit('LOADING');
+        Twillio.sendTxt('441325952405', 'Testing Text Message Service').then(function(response) {
+            $scope.$emit('NOTLOADING');
+            $scope.response = response;
+            console.log(response);
+        });
+    }
 
     init();
   }]);
