@@ -1,8 +1,8 @@
 {
         "id": 10,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "Food Blender",
+        "description": "Philips HR2020/50 Silver Blender with 1.75 Litre Jug, 400 Watt",
+        "category": "kitchen",
         "user": {
             "id": "010",
             "name": "Thomas Maton",
@@ -13,16 +13,16 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
+                "alt": "Food Blender 1",
+                "path": "images/products/food-blender1.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
+                "alt": "Food Blender 2",
+                "path": "images/products/food-blender2.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Food Blender 3",
+                "path": "images/products/food-blender3.jpg"
             }
         ],
         "payment": "paypal"

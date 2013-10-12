@@ -1,7 +1,7 @@
 {
         "id": 12,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
+        "title": "Charcoal BBQ",
+        "description": "Ultranatura Smoker Charcoal Grill Alamo - BBQ - Grill Trolley",
         "category": "garden",
         "user": {
             "id": "012",
@@ -13,16 +13,24 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
+                "alt": "Charcoal BBQ",
+                "path": "images/products/cbbq1.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
+                "alt": "Charcoal BBQ",
+                "path": "images/products/cbbq2.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Charcoal BBQ",
+                "path": "images/products/cbbq3.jpg"
+            },
+            {
+                "alt": "Charcoal BBQ",
+                "path": "images/products/cbbq4.jpg"
+            },
+            {
+                "alt": "Charcoal BBQ",
+                "path": "images/products/cbbq5.jpg"
             }
         ],
         "payment": "paypal"
