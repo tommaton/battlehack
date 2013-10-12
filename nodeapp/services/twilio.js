@@ -14,12 +14,12 @@ exports.sendMessage = function (toNumber, message, callback) {
                     console.log(message.sid);
 
                     console.log('Message sent on:');
-                    console.log(message.dateCreated);
+                    console.log(message);
 
-                    callback('Message Sent on: ' + message.dateCreated);
+                    callback('{"status":"Sent","sent":true,"date":' + message.dateCreated + '}');
                 }
                 else {
-                    callback(error.message)
+                    callback('{"status":"failed","error":error.message}');
                 }
             });
 }
