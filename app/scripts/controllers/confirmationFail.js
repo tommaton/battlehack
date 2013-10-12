@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('battlehackApp').controller('ConfirmationfailCtrl', function ($scope) {
+window.APP.controller('ConfirmationfailCtrl', function ($scope) {
     function init() {
 
     };

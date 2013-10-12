@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('battlehackApp').service('Services', ['$http'], function Services($http) {
+window.APP.service('globalServices', ['$http', '$q', function Services($http, $q) {
     // AngularJS will instantiate a singleton by calling "new" on this function
     this.getProducts = function() {
         var deferred = $q.defer();
@@ -16,4 +16,4 @@ angular.module('battlehackApp').service('Services', ['$http'], function Services
             return deferred.promise;
     };
 
-});
+}]);

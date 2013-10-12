@@ -1,15 +1,16 @@
 'use strict';
 
-angular.module('battlehackApp').controller('ProductlistingCtrl', ['$scope', 'Services', function($scope, Services) {
-    console.log($scope, Services);
-    $scope.products = null;
-
+window.APP.controller('ProductlistingCtrl', ['$scope', 'globalServices', function($scope, globalServices) {
+    function init() {
+        $scope.products = null;
+        $scope.getProducts();
+    }
+    
     $scope.getProducts = function() {
-        Services.getProducts().then(function(response) {
+        globalServices.getProducts().then(function(response) {
             $scope.products = response;
-        },
-        function() {
-            alert('no products');
         });
     }
+
+    init();
 }]);

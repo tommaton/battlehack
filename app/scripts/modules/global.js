@@ -4,7 +4,7 @@ neighbourly.core = neighbourly.core || {};
 neighbourly.core.global = {
     init: function() {
         if(!localStorage.getItem("currentLocation")) {
-            getLocation();
+            neighbourly.core.global.getLocation();
         }
     },
     getLocation: function() {        
