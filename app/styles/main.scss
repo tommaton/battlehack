@@ -21,7 +21,8 @@ body {
 }
 
 .container {
-    max-width: 480px;
+    width: 100%;
+    max-width: 320px;
     margin: 0 auto;
     padding: 20px;
     transition: transform 0.3s ease;
@@ -103,6 +104,11 @@ Navigation Styles
         display: inline-block;
         margin-right: 10px;
     }
+}
+
+.call-to-action {
+    overflow:hidden;
+    clear:both;
 }
 
 /* ============================================================

@@ -1,7 +1,7 @@
 {
         "id": 7,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
+        "title": "Garden tools",
+        "description": "Draper DIY Series 09245 Carbon Fork and Spade Set",
         "category": "garden",
         "user": {
             "id": "07",
@@ -13,16 +13,8 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Garden Tools",
+                "path": "images/products/gt1.jpg"
             }
         ],
         "payment": "paypal"

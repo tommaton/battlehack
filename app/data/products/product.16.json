@@ -1,8 +1,8 @@
 {
         "id": 16,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "Circular Saw",
+        "description": "Bosch PKS 40 Circular Saw 600W",
+        "category": "tools",
         "user": {
             "id": "016",
             "name": "Thomas Maton",
@@ -13,16 +13,8 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Circular Saw",
+                "path": "images/products/cs1.jpg"
             }
         ],
         "payment": "paypal"

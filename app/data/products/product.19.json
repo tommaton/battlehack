@@ -1,8 +1,8 @@
 {
         "id": 19,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "Cordless Power Drill",
+        "description": "BOSCH PSB 18 LI-2 Power4All Cordless Combi Drill - supplied without battery + 18 V Power4All Lithium-ion Battery Charger",
+        "category": "tools",
         "user": {
             "id": "019",
             "name": "Thomas Maton",
@@ -13,16 +13,12 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
+                "alt": "Power Drill",
+                "path": "images/products/pd1.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Power Drill",
+                "path": "images/products/pd2.jpg"
             }
         ],
         "payment": "paypal"

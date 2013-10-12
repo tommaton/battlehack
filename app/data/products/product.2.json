@@ -1,8 +1,8 @@
 {
         "id": 2,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "Kärcher K4 Water-Cooled Pressure Washer",
+        "description": "Kärcher K4 Water-Cooled Pressure Washer",
+        "category": "tools",
         "user": {
             "id": "02",
             "name": "Thomas Maton",
@@ -13,16 +13,8 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Kärcher K4 Water-Cooled Pressure Washer",
+                "path": "images/products/pw1.jpg"
             }
         ],
         "payment": "paypal"

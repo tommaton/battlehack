@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "dependencies": {
       "twilio": "~1.2.0",
-      "paypal-rest-sdk": "~0.6.4"
+      "paypal-rest-sdk": "~0.6.4",
+      "express": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

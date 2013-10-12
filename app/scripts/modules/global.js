@@ -1,3 +1,5 @@
+'use strict';
+
 var neighbourly = neighbourly || {};
 neighbourly.core = neighbourly.core || {};
 
@@ -24,13 +26,12 @@ neighbourly.core.global = {
     },
     storeLocation: function (latitude, longitude) {
         var latLong = JSON.stringify({
-            "latitude": latitude,
-            "longitude": longitude
+            'latitude': latitude,
+            'longitude': longitude
         });
         localStorage.setItem('currentLocation', latLong);
     }
 };
-
 
 //neighbourly.core.global.init();
 neighbourly.core.global.handleNavigation();
