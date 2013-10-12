@@ -1,6 +1,6 @@
 var paypal_sdk = require('paypal-rest-sdk');
 
-function payPalService (clientid, clientsecret) {
+module.exports.makePayment = function (clientid, clientsecret) {
     paypal_sdk.configure({
         'host': 'api.sandbox.paypal.com',
         'port': '',
@@ -37,5 +37,3 @@ function payPalService (clientid, clientsecret) {
         }
     });
 }
-
-module.exports = payPalService;
