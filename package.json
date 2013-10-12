@@ -4,7 +4,8 @@
   "dependencies": {
       "twilio": "~1.2.0",
       "paypal-rest-sdk": "~0.6.4",
-      "express": "*"
+      "express": "*",
+      "socket.io": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

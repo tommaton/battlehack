@@ -5,7 +5,7 @@ exports.sendMessage = function (toNumber, message, callback) {
     var client = new twilioApi.RestClient(config.twilio.sid, config.twilio.authToken);
 
     client.sms.messages.create({
-                to:to,
+                to:toNumber,
                 from:config.twilio.fromNumber,
                 body:message
             }, function(error, message) {
