@@ -1,7 +1,7 @@
 'use strict';
-
-angular.module('battlehackApp', [])
-  .config(function ($routeProvider) {
+window.APP = angular.module('battlehackApp', []);
+  
+  window.APP.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

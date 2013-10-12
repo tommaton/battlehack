@@ -1,1 +1,8 @@
+<h1>{{pageTitle}}</h1>
 <p>This is the productListing view.</p>
+<ul>
+    <li ng-repeat="product in products">
+        <img src="http://www.placehold.it/320x200" alt="{{product.title}}"/>
+        <h4>{{product.title}}</h4>
+    </li>
+</ul>

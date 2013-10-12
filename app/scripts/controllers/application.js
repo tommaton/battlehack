@@ -1,6 +1,7 @@
 'use strict';
 
-window.APP.controller('HomeCtrl', function ($scope) {
+angular.module('battlehackApp')
+  .controller('AppCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

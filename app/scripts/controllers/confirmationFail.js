@@ -1,10 +1,9 @@
 'use strict';
 
-angular.module('battlehackApp')
-  .controller('ConfirmationfailCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+window.APP.controller('ConfirmationfailCtrl', function ($scope) {
+    function init() {
+
+    };
+
+    init();
+});

@@ -12,6 +12,9 @@ Attendees
 
 Getting Started
 
+Installing Compass
+- gem install compass
+
 Installing Yeoman
 - npm install -g yo
 - npm install -g generator-angular
@@ -36,3 +39,5 @@ battlehack1
 +441325952405
 
 JustGiving
+neighbourly
+battlehack1

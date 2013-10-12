@@ -15,7 +15,17 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 </head>
-  <body ng-app="battlehackApp">
+  <body ng-app="battlehackApp" ng-controller="AppCtrl">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
     <div class="container" ng-view=""></div>
 
     <script src="bower_components/jquery/jquery.js"></script>
@@ -47,16 +57,22 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/routes.js"></script>
+    <script src="scripts/services/services.js"></script>
+
+    <script src="scripts/services/twillio.js"></script>
+    <script src="scripts/services/paypal.js"></script>
+    <script src="scripts/services/justGiving.js"></script>
+    <script src="scripts/services/hereMaps.js"></script>
+
+    <script src="scripts/controllers/application.js"></script>
     <script src="scripts/controllers/home.js"></script>
     <script src="scripts/controllers/productListing.js"></script>
     <script src="scripts/controllers/productDetails.js"></script>
     <script src="scripts/controllers/login.js"></script>
     <script src="scripts/controllers/confirmationSuccess.js"></script>
     <script src="scripts/controllers/confirmationFail.js"></script>
-    <script src="scripts/services/twillio.js"></script>
-    <script src="scripts/services/paypal.js"></script>
-    <script src="scripts/services/justGiving.js"></script>
-    <script src="scripts/services/hereMaps.js"></script>
+
+    <script src="scripts/modules/global.js"></script>
     <!-- endbuild -->
 </body>
 </html>

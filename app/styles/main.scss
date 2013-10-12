@@ -1,9 +1,13 @@
-$iconSpritePath: "../images/glyphicons-halflings.png";
-$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+/* ============================================================
+Imports/Vars/Mixins
+============================================================ */
 
 @import "bootstrap-sass/lib/bootstrap";
 
-/* Put your CSS here */
+/* ============================================================
+General Styles
+============================================================ */
+
 html,
 body {
   margin: 0;
@@ -19,7 +23,13 @@ body {
 .container {
     max-width: 480px;
     margin: 0 auto;
+}
 
+/* ============================================================
+Login Styles
+============================================================ */
+
+.login-view {
     h1 {
         font-size: 55px;
         text-align: center;
@@ -28,9 +38,13 @@ body {
 
     #login-form {
         margin-top: 30px;
-    }
 
-    input {
-        width: 100%;
+        input {
+            width: 100%;
+        }
     }
 }
+
+/* ============================================================
+Home Styles
+============================================================ */

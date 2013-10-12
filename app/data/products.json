@@ -1,0 +1,89 @@
+[
+    {
+        "id": 1,
+        "title": "Lawn Mower",
+        "description": "Petrol powered lawnmower",
+        "category": "garden",
+        "user": {
+            "id": "01",
+            "name": "Thomas Maton",
+            "location": {
+                "lat": "51.505151",
+                "long": "-0.021258"
+            }
+        },
+        "images": [
+            {
+                "alt": "LawnMower",
+                "path": "image/lawn1.jpg"
+            },
+            {
+                "alt": "LawnMower",
+                "path": "image/lawn2.jpg"
+            },
+            {
+                "alt": "LawnMower",
+                "path": "image/lawn3.jpg"
+            }
+        ],
+        "payment": "paypal"
+    },
+    {
+        "id": 2,
+        "title": "6 Man Tent",
+        "description": "6 Man Tent",
+        "category": "Out Door Activites",
+        "user": {
+            "id": "02",
+            "name": "Abid Din",
+            "location": {
+                "lat": "51.521086",
+                "long": "-0.102105"
+            }
+        },
+        "images": [
+            {
+                "alt": "LawnMower",
+                "path": "image/lawn1.jpg"
+            },
+            {
+                "alt": "LawnMower",
+                "path": "image/lawn2.jpg"
+            },
+            {
+                "alt": "LawnMower",
+                "path": "image/lawn3.jpg"
+            }
+        ],
+        "payment": "paypal"
+    },
+    {
+        "id": 3,
+        "title": "6 Man Tent",
+        "description": "6 Man Tent",
+        "category": "Out Door Activites",
+        "user": {
+            "id": "03",
+            "name": "Owain Llewellyn",
+            "location": {
+                "lat": "51.523728",
+                "long": "-0.079336"
+            }
+        },
+        "images": [
+            {
+                "alt": "LawnMower",
+                "path": "image/lawn1.jpg"
+            },
+            {
+                "alt": "LawnMower",
+                "path": "image/lawn2.jpg"
+            },
+            {
+                "alt": "LawnMower",
+                "path": "image/lawn3.jpg"
+            }
+        ],
+        "payment": "paypal"
+    }
+]
