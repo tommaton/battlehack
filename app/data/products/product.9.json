@@ -1,7 +1,7 @@
 {
         "id": 9,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
+        "title": "SVGA Projector",
+        "description": "Epson EB-S02 2600 Lumens SVGA Projector",
         "category": "garden",
         "user": {
             "id": "09",
@@ -13,16 +13,12 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
+                "alt": "SVGA Projector",
+                "path": "images/products/projector1.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "SVGA Projector",
+                "path": "images/products/projector2.jpg"
             }
         ],
         "payment": "paypal"

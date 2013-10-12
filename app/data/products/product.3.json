@@ -1,8 +1,8 @@
 {
         "id": 3,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "Stainless stell Cutlery",
+        "description": "Amefa Monogram Harley Cutlery Set Stainless Steel 24 Piece",
+        "category": "kitchen",
         "user": {
             "id": "03",
             "name": "Thomas Maton",
@@ -13,8 +13,12 @@
         },
         "images": [
             {
-                "alt": "Garden table and chairs",
-                "path": "images/products/table-chairs1.jpg"
+                "alt": "Stainless stell Cutlery",
+                "path": "images/products/cutlery1.jpg"
+            },
+            {
+                "alt": "Stainless stell Cutlery",
+                "path": "images/products/cutlery2.jpg"
             }
         ],
         "payment": "paypal"

@@ -1,8 +1,8 @@
 {
         "id": 8,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "Speakers",
+        "description": "O'heocha CIAN 2.5-Way Stand Floor Speaker",
+        "category": "living-room",
         "user": {
             "id": "08",
             "name": "Thomas Maton",
@@ -13,16 +13,8 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Speakers",
+                "path": "images/products/speakers1.jpg"
             }
         ],
         "payment": "paypal"

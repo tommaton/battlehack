@@ -1,29 +1,21 @@
 {
-        "id": 5,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
-        "user": {
-            "id": "05",
-            "name": "Thomas Maton",
-            "location": {
-                "lat": "51.505151",
-                "long": "-0.021258"
-            }
-        },
-        "images": [
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
-            }
-        ],
-        "payment": "paypal"
-    }
+    "id": 5,
+    "title": "Full length mirror",
+    "description": "Oak Finish Wooden Free Standing Full Length Cheval Mirror",
+    "category": "bedroom",
+    "user": {
+        "id": "05",
+        "name": "Thomas Maton",
+        "location": {
+            "lat": "51.505151",
+            "long": "-0.021258"
+        }
+    },
+    "images": [
+        {
+            "alt": "Full length mirror",
+            "path": "images/products/full-length-back1.jpg"
+        }
+    ],
+    "payment": "paypal"
+}

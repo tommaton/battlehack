@@ -1,8 +1,8 @@
 {
         "id": 4,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "Microsoft Surface",
+        "description": "Microsoft Surface Pro 64GB with Windows® 8 (10.6' Clear Type Full HD Display, 16:9, Pen Input (included), Intel® 3rd Generation Core i5 Processor with Intel® HD Graphics 4000, 4GB RAM, WiFI, Bluetooth, Webcam, USB) without Keyboard",
+        "category": "other",
         "user": {
             "id": "04",
             "name": "Thomas Maton",
@@ -13,16 +13,8 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Microsoft surface",
+                "path": "images/products/surface1.jpg"
             }
         ],
         "payment": "paypal"
