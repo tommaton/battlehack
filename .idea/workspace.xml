@@ -103,7 +103,7 @@
       <file leaf-file-name="twilio.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nodeapp/services/twilio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="58" selection-start="712" selection-end="712" vertical-scroll-proportion="0.4273743" vertical-offset="0" max-vertical-offset="716">
+            <state line="19" column="119" selection-start="815" selection-end="815" vertical-scroll-proportion="0.4511173" vertical-offset="0" max-vertical-offset="716">
               <folding />
             </state>
           </provider>
@@ -572,7 +572,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nodeapp/services/twilio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="58" selection-start="712" selection-end="712" vertical-scroll-proportion="0.4273743" vertical-offset="0" max-vertical-offset="716">
+        <state line="19" column="119" selection-start="815" selection-end="815" vertical-scroll-proportion="0.4511173" vertical-offset="0" max-vertical-offset="716">
           <folding />
         </state>
       </provider>
