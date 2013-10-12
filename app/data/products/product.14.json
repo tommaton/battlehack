@@ -1,8 +1,8 @@
 {
         "id": 14,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "4 Man Tent",
+        "description": "Coleman Coastline 4 Deluxe Four Man Tent",
+        "category": "other",
         "user": {
             "id": "014",
             "name": "Thomas Maton",
@@ -13,16 +13,12 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
+                "alt": "4 Man deluxe tent",
+                "path": "images/products/4mantent1.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "4 Man deluxe tent",
+                "path": "images/products/4mantent2.jpg"
             }
         ],
         "payment": "paypal"

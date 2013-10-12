@@ -1,7 +1,7 @@
 {
         "id": 20,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
+        "title": "Garden table and chairs",
+        "description": "8 Piece Santorini Garden and Patio Set -6 Chairs-Table-Tilt and Crank Parasol",
         "category": "garden",
         "user": {
             "id": "020",
@@ -13,16 +13,8 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Garden table and chairs",
+                "path": "images/products/table-chairs1.jpg"
             }
         ],
         "payment": "paypal"

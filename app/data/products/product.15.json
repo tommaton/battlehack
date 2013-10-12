@@ -1,8 +1,8 @@
 {
         "id": 15,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "Compuond Mitre Saw",
+        "description": "Draper 52926 210 mm 230-Volt 1,200-Watt Compound Mitre Saw",
+        "category": "tools",
         "user": {
             "id": "015",
             "name": "Thomas Maton",
@@ -13,16 +13,16 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
+                "alt": "Mitre Saw",
+                "path": "images/products/ps1.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
+                "alt": "Mitre Saw",
+                "path": "images/products/ps2.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Mitre Saw",
+                "path": "images/products/ps3.jpg"
             }
         ],
         "payment": "paypal"

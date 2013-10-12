@@ -1,8 +1,8 @@
 {
         "id": 17,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "51-inch 3D TV",
+        "description": "Samsung PS51D550 51-inch Widescreen Full HD 1080p 3D Plasma TV with Freeview HD",
+        "category": "living-room",
         "user": {
             "id": "017",
             "name": "Thomas Maton",
@@ -13,16 +13,20 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
+                "alt": "51-inch 3D TV",
+                "path": "images/products/52tv1.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
+                "alt": "51-inch 3D TV",
+                "path": "images/products/52tv2.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "51-inch 3D TV",
+                "path": "images/products/52tv3.jpg"
+            },
+            {
+                "alt": "51-inch 3D TV",
+                "path": "images/products/52tv4.jpg"
             }
         ],
         "payment": "paypal"

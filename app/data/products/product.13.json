@@ -1,8 +1,8 @@
 {
         "id": 13,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "XBox 360",
+        "description": "Xbox 360 with 12 games and 2 wireless controllers",
+        "category": "living-room",
         "user": {
             "id": "013",
             "name": "Thomas Maton",
@@ -13,16 +13,8 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Xbox 360",
+                "path": "images/products/xbox1.jpg"
             }
         ],
         "payment": "paypal"

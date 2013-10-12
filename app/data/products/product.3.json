@@ -13,16 +13,8 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
-            },
-            {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Garden table and chairs",
+                "path": "images/products/table-chairs1.jpg"
             }
         ],
         "payment": "paypal"

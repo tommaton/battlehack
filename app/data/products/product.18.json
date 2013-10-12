@@ -1,8 +1,8 @@
 {
         "id": 18,
-        "title": "Lawn Mower",
-        "description": "Petrol powered lawnmower",
-        "category": "garden",
+        "title": "Blu-ray DVD player",
+        "description": "Samsung BD-F5500 3D Network Blu-ray and DVD Player",
+        "category": "living-room",
         "user": {
             "id": "018",
             "name": "Thomas Maton",
@@ -13,16 +13,16 @@
         },
         "images": [
             {
-                "alt": "LawnMower",
-                "path": "image/lawn1.jpg"
+                "alt": "Blu-ray DVD player",
+                "path": "images/products/br1.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn2.jpg"
+                "alt": "Blu-ray DVD player",
+                "path": "images/products/br2.jpg"
             },
             {
-                "alt": "LawnMower",
-                "path": "image/lawn3.jpg"
+                "alt": "Blu-ray DVD player",
+                "path": "images/products/br3.jpg"
             }
         ],
         "payment": "paypal"
