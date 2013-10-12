@@ -1,5 +1,5 @@
 /* ============================================================
-Imports/Vars/Mixins
+Helpers
 ============================================================ */
 
 @import "bootstrap-sass/lib/bootstrap";
@@ -23,6 +23,44 @@ body {
 .container {
     max-width: 480px;
     margin: 0 auto;
+    padding: 20px;
+}
+
+.form-control,
+.btn {
+    border-radius: 0;
+}
+
+/* ============================================================
+Header Styles
+============================================================ */
+
+.header {
+    padding: 10px 15px;
+    color: #fff;
+    background: #3A87AD;
+
+    .nav-icon {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: default;
+        }
+    }
+}
+
+/* ============================================================
+Navigation Styles
+============================================================ */
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    transform: translate3d(-100%,0,0);
 }
 
 /* ============================================================
@@ -31,9 +69,18 @@ Login Styles
 
 .login-view {
     h1 {
-        font-size: 55px;
+        color: #428BCA;
+        font-size: 50px;
         text-align: center;
         font-weight: lighter;
+        margin: 0;
+
+        strong {
+            display: inline-block;
+            margin-right: 3px;
+            font-size: 8px;
+            color: #5BC0DE;
+        }
     }
 
     #login-form {
@@ -41,6 +88,7 @@ Login Styles
 
         input {
             width: 100%;
+            -webkit-appearance: none;
         }
     }
 }
@@ -48,3 +96,7 @@ Login Styles
 /* ============================================================
 Home Styles
 ============================================================ */
+
+.home-view {
+
+}
