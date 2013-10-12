@@ -14,7 +14,6 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
             isLoggedIn: loggedInState
         };
 
-
       $scope.isLoading = false;
 
       $scope.$on('LOADING',function(){
