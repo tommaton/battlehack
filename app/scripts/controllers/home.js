@@ -1,9 +1,11 @@
 'use strict';
 
-window.APP.controller('HomeCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+window.APP.controller('HomeCtrl', ['$location', '$scope', function ($location, $scope) {
+    function init() {
+        if(!$scope.$parent.user.isLoggedIn) {
+            //$location.path('login');
+        }
+    }
+
+    init();
+}]);

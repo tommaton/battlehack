@@ -2,6 +2,7 @@
 
 window.APP.controller('MainCtrl', ['$scope', 'globalServices', '$location', function ($scope, globalServices, $location) {
     function init() {
+        console.log('main ctrller called', 'route is: /');
         if($scope.$parent.isUserLoggedIn()){
             $location.path('home');
         } else {
@@ -10,14 +11,6 @@ window.APP.controller('MainCtrl', ['$scope', 'globalServices', '$location', func
         }
 
     }
-
-    $scope.isUserLoggedIn = function() {
-        if(!$scope.user.isLoggedIn) {
-            return false;
-        } else {
-            return true;
-        }
-    };
 
     init();
 }]);

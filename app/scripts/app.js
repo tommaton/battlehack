@@ -10,7 +10,17 @@ window.APP.controller('AppCtrl', ['$scope', function($scope) {
 
     }
 
+    $scope.logOut = function() {
+      console.log('logging out user');
+      $scope.user = {
+        isLoggedIn: false,
+        email: null,
+        password: null
+      }
+    };
+
     $scope.isUserLoggedIn = function() {
+        console.log('is user logged in?');
         if(!$scope.user.isLoggedIn) {
             return false;
         } else {
