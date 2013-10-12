@@ -24,6 +24,12 @@ body {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
+    padding: 0;
+}
+
+.call-to-action {
+    overflow:hidden;
+    clear:both;
 }
 
 /* ============================================================
@@ -32,7 +38,7 @@ Login Styles
 
 .login-view {
     h1 {
-        font-size: 55px;
+        font-size: 155px;
         text-align: center;
         font-weight: lighter;
     }

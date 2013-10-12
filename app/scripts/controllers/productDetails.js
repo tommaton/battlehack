@@ -11,7 +11,7 @@ window.APP.controller('ProductdetailsCtrl', ['$scope', '$routeParams', 'globalSe
         globalServices.getProduct(productId).then(function(response) {
             $scope.product = response;
         });
-    } 
+    };
 
     init();
   }]);
