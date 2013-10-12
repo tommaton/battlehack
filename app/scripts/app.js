@@ -4,8 +4,14 @@ window.APP = angular.module('battlehackApp', []);
 
 window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $location) {
     function init() {
+      var loggedInState = (localStorage.getItem('user') || false);
+
+        if(loggedInState) {
+          loggedInState = JSON.parse(localStorage.getItem('user')).isLoggedIn;
+        }
+
         $scope.user = {
-            isLoggedIn: false
+            isLoggedIn: loggedInState
         };
 
 
@@ -19,23 +25,23 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           $scope.isLoading = false;
       });
 
+
     }
 
 
     $scope.logOut = function() {
-      console.log('logging out user');
       $scope.user = {
         isLoggedIn: false,
         email: null,
         password: null
       }
-
+      localStorage.clear('user');
       $location.path('login');
 
     };
 
     $scope.isUserLoggedIn = function() {
-        console.log('is user logged in?', $scope.user.isLoggedIn);
+      
         if(!$scope.user.isLoggedIn) {
             return false;
         } else {

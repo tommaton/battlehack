@@ -1,14 +1,27 @@
 'use strict';
 
 angular.module('battlehackApp')
-  .controller('ContactuserCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+  .controller('ContactuserCtrl', ['$scope', '$routeParams', '$location', 'globalServices', function ($scope, $routeParams, $location, globalServices) {
     function init() {
-        var routeParams = $routeParams;
+        
+        if(!$scope.$parent.user.isLoggedIn){
+            $location.path('login');
+        } else {
+            console.log($routeParams);
+            $scope.neighbour = $routeParams.userId;
+            $scope.productId = $routeParams.productId;
 
-        console.log('contact user ctrl initialised');
-
-        return routeParams;
+            $scope.getProduct($scope.productId);
+        }
     }
+
+    $scope.getProduct = function(productId) {
+        $scope.$emit('LOADING');
+        globalServices.getProduct(productId).then(function(response) {
+            $scope.$emit('NOTLOADING');
+            $scope.product = response;
+        });
+    };
 
     init();
   }]);
