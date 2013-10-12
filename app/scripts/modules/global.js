@@ -38,11 +38,11 @@ neighbourly.core.global = {
         nokia.Settings.set('app_id', 'kmwpUb08UtDm0fNWVk7I');
         nokia.Settings.set('app_code', 'olY6cOnIbswrXEgZ53cGUw');
 
-        var map = new nokia.maps.map.Display(
-            document.getElementById('mapping-container'), {
+        var mapContainer = document.getElementById('mapping-container');
+
+        var map = new nokia.maps.map.Display(mapContainer, {
                 zoomLevel: 16,
-                center: [52.51, 13.4],
-                baseMapType: nokia.maps.map.Display.NORMAL
+                center: [52.51, 13.4]
             }
         );
     }
