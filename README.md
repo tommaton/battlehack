@@ -11,9 +11,28 @@ Attendees
 - Abid Din
 
 Getting Started
+
+Installing Yeoman
+- npm install -g yo
+- npm install -g generator-angular
 - npm install
+- Bower Install
+- Grunt
+- Grunt server
 
 Run either
 - grunt test (test your app)
 - grunt server (preview your app)
 - grunt (build the application for deployment)
+
+*Login*
+Paypal Sandbox Login
+francis.gilbert@akqa.com
+battlehack1
+
+Twilio
+francis.gilbert@akqa.com
+battlehack1
++441325952405
+
+JustGiving
