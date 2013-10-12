@@ -16,5 +16,4 @@ window.APP.service('Paypal', ['$http', '$q', function Paypal($http, $q) {
         
         return deferred.promise;
     };
-
 }]);

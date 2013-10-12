@@ -28,7 +28,7 @@ Run either
 - grunt server (preview your app)
 - grunt (build the application for deployment)
 
-*Login*
+##Login
 Paypal Sandbox Login
 francis.gilbert@akqa.com
 battlehack1
@@ -41,3 +41,20 @@ battlehack1
 JustGiving
 neighbourly
 battlehack1
+
+
+##API
+/paypal
+POST
+price
+description
+
+Returns
+jsonObject
+
+/twilio
+POST
+to
+message
+Returns
+Message Date
