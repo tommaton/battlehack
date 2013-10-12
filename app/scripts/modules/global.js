@@ -9,7 +9,7 @@ neighbourly.core.global = {
     },
     getLocation: function() {        
         navigator.geolocation.getCurrentPosition(function(position) {
-            storeLocation(position.coords.latitude, position.coords.longitude);
+            neighbourly.core.global.storeLocation(position.coords.latitude, position.coords.longitude);
         }); 
     },
     storeLocation: function(latitude, longitude) {
