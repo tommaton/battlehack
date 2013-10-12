@@ -31,16 +31,16 @@
     <nav class="navigation">
         <ul>
             <li><a href="#/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="#/productListings"><span class="glyphicon glyphicon-list"></span> Listings</a></li>
+            <li><a href="#/home"><span class="glyphicon glyphicon-list"></span> Categories</a></li>
             <li><a href="#/settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
             <li><a href="#/login" ng-click="logout()"><span class="glyphicon glyphicon-circle-arrow-left"></span> Logout</a></li>
         </ul>
     </nav>
 
-    <header class="header">
+    <header class="header" ng-show="user.isLoggedIn">
         <a href="#" class="nav-icon">&#9776;</a>
 
-        <div class="btn-group" ng-show="isLoggedIn">
+        <div class="btn-group">
           <button type="button" class="btn btn-default">List</button>
           <button type="button" class="btn btn-default">Map</button>
         </div>

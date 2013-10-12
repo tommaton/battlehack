@@ -41,10 +41,6 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/home.html',
       controller: 'HomeCtrl'
     })
-    .when('/productListing', {
-      templateUrl: 'views/productListing.html',
-      controller: 'ProductlistingCtrl'
-    })
     .when('/product/:id', {
       templateUrl: 'views/productDetails.html',
       controller: 'ProductdetailsCtrl'
