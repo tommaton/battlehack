@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css(.tmp) styles/main.css -->
@@ -50,10 +50,9 @@
 
     <div class="container" ng-view=""></div>
 
-    <div data-ng-show="isLoading">
-        <img src="http://www.placehold.it/25x25"/>
-        <h3>LOADING...</h3>
-    </div>
+
+    <div data-ng-show="isLoading" class="loading glyphicon glyphicon-refresh"></div>
+
 
     <!-- mapping library -->
     <script src="http://js.api.here.com/se/2.5.3/jsl.js" type="text/javascript" charset="utf-8"></script>
@@ -89,7 +88,12 @@
     <script src="scripts/modules/global.js"></script>
     <script src="scripts/controllers/confirmDetails.js"></script>
     <script src="scripts/controllers/contactUser.js"></script>
+<<<<<<< HEAD
     <script src="scripts/controllers/map.js"></script>
+=======
+    <script src="scripts/controllers/respondToOffer.js"></script>
+    <script src="scripts/controllers/makeOffer.js"></script>
+>>>>>>> f80666fb2f4400f40d386be965ae9c0bb3352b0c
     <!-- endbuild -->
 </body>
 </html>

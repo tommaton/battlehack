@@ -7,7 +7,7 @@ exports.route = function (request, response) {
     paypalModule.paypal(price, description, function(paymentDetails){
 
         //Store to session
-        request.session.paymentid = paymentDetails.id;
+        request.session.paymentid = response.id;
 
         response.send(paymentDetails);
     });
@@ -15,6 +15,9 @@ exports.route = function (request, response) {
 
 exports.executeRoute = function (request, response) {
     var payerId = request.query.PayerID;
+    var token = request.query.token;
+
+    console.log(request.session.paymentid)
 
     paypalModule.executePayment(request.session.paymentid, payerId, function(jsonData){
         response.send(jsonData);

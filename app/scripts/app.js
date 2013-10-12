@@ -78,10 +78,6 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/confirmationFail.html',
       controller: 'ConfirmationfailCtrl'
     })
-    .when('/confirmDetails', {
-      templateUrl: 'views/confirmDetails.html',
-      controller: 'ConfirmdetailsCtrl'
-    })
     .when('/contactUser/:userId/product/:productId', {
       templateUrl: 'views/contactUser.html',
       controller: 'ContactuserCtrl'
@@ -89,6 +85,14 @@ window.APP.config(function ($routeProvider) {
     .when('/map', {
       templateUrl: 'views/map.html',
       controller: 'MapCtrl'
+    })
+    .when('/respondToOffer', {
+      templateUrl: 'views/respondToOffer.html',
+      controller: 'RespondtoofferCtrl'
+    })
+    .when('/makeOffer', {
+      templateUrl: 'views/makeOffer.html',
+      controller: 'MakeofferCtrl'
     })
     .otherwise({
       redirectTo: '/'
