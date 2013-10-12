@@ -16,6 +16,9 @@ Installing Yeoman
 - npm install -g yo
 - npm install -g generator-angular
 - npm install
+- Bower Install
+- Grunt
+- Grunt server
 
 Run either
 - grunt test (test your app)
