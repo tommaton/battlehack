@@ -16,7 +16,7 @@ exports.sendMessage = function (toNumber, message, callback) {
                     console.log('Message sent on:');
                     console.log(message);
 
-                    callback('{"status":"Sent","sent":"true","date":' + message.dateCreated + '}');
+                    callback('{"status":"Sent","sent":true,"date":' + message.dateCreated + '}');
                 }
                 else {
                     callback('{"status":"failed","error":error.message}');
