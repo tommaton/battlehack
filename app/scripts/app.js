@@ -2,7 +2,7 @@
 
 window.APP = angular.module('battlehackApp', []);
 
-window.APP.controller('AppCtrl', ['$scope', function($scope) {
+window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $location) {
     function init() {
         $scope.user = {
             isLoggedIn: false
@@ -17,6 +17,9 @@ window.APP.controller('AppCtrl', ['$scope', function($scope) {
         email: null,
         password: null
       }
+
+      $location.path('login');
+
     };
 
     $scope.isUserLoggedIn = function() {
