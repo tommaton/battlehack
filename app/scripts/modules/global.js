@@ -7,10 +7,10 @@ neighbourly.core.global = {
             neighbourly.core.global.getLocation();
         }
     },
-    getLocation: function() {        
+    getLocation: function() {
         navigator.geolocation.getCurrentPosition(function(position) {
             neighbourly.core.global.storeLocation(position.coords.latitude, position.coords.longitude);
-        }); 
+        });
     },
     storeLocation: function(latitude, longitude) {
         var latLong = JSON.stringify({
@@ -20,6 +20,5 @@ neighbourly.core.global = {
         localStorage.setItem('currentLocation', latLong);
     }
 };
-    
 
 //neighbourly.core.global.init();
