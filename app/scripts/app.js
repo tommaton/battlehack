@@ -20,7 +20,7 @@ window.APP.controller('AppCtrl', ['$scope', function($scope) {
     };
 
     $scope.isUserLoggedIn = function() {
-        console.log('is user logged in?');
+        console.log('is user logged in?', $scope.user.isLoggedIn);
         if(!$scope.user.isLoggedIn) {
             return false;
         } else {

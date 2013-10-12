@@ -40,7 +40,7 @@
     <header class="header">
         <a href="#" class="nav-icon">&#9776;</a>
 
-        <div class="btn-group">
+        <div class="btn-group" ng-show="isLoggedIn">
           <button type="button" class="btn btn-default">List</button>
           <button type="button" class="btn btn-default">Map</button>
         </div>
@@ -74,7 +74,6 @@
     <script src="scripts/services/hereMaps.js"></script>
 
     <script src="scripts/controllers/home.js"></script>
-    <script src="scripts/controllers/productListing.js"></script>
     <script src="scripts/controllers/productDetails.js"></script>
     <script src="scripts/controllers/login.js"></script>
     <script src="scripts/controllers/confirmationSuccess.js"></script>
