@@ -7,15 +7,12 @@ window.APP.controller('LoginCtrl', ['$scope', '$location', function ($scope, $lo
         $scope.user.email = "";
         $scope.user.password = "";
 
-        console.log($scope.user);
-
     }
-
-
 
     $scope.login = function(email, password) {
         $scope.user.email = email;
         $scope.user.password = password;
+        $scope.user.isLoggedIn = true;
 
         $scope.updateUser($scope.user);
     };
