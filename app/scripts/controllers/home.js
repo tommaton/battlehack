@@ -11,7 +11,7 @@ window.APP.controller('HomeCtrl', ['$location', '$scope', 'globalServices', func
             $scope.searchText = null;
         }
 
-        
+
 
     }
     
