@@ -86,6 +86,32 @@ body {
     }
 }
 
+.modal-dialog {
+    padding: 0;
+
+    .modal-header {
+        border: none;
+        padding: 10px;
+    }
+
+    .modal-content {
+        border-radius: 0;
+        box-shadow: none;
+        color: #fff;
+        background: rgba(92,184,92,0.95);
+    }
+
+    h4 {
+        font-size: 28px;
+        font-weight: lighter;
+        margin: 0;
+    }
+
+    p {
+        display: none;
+    }
+}
+
 /* ============================================================
 Header Styles
 ============================================================ */
@@ -150,6 +176,7 @@ Header Styles
         right: 15px;
         color: #fff;
         text-decoration: none;
+        cursor: pointer;
     }
 }
 
@@ -186,7 +213,8 @@ Navigation Styles
         color: #fff;
         text-decoration: none;
         padding: 15px;
-        background: #214d75 ;
+        background: #214d75;
+        cursor: pointer;
 
         &:active {
             background: #255682;
@@ -298,7 +326,7 @@ Home Styles
 }
 
 /* ============================================================
-Mapping Styles
+Product Detail Styles
 ============================================================ */
 
 .product-detail-view {
@@ -378,5 +406,16 @@ Send Payment Styles
     .green {
         background: #5CB85C;
         border: 1px solid #468847;
+    }
+}
+
+/* ============================================================
+Contact Styles
+============================================================ */
+
+.contact-user-view {
+    h3 {
+        font-weight: lighter;
+        color: #428BCA;
     }
 }
