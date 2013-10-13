@@ -11,7 +11,7 @@ exports.paypal = function (price, description, callback) {
     var create_payment_json = {
         "intent": "authorize",
         "payer": {
-            "payment_method": "paypal"
+            "payment_method": "sale"
         },
         "redirect_urls": {
             "return_url": config.paypal.returnUrl,
