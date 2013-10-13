@@ -6,7 +6,8 @@
       "paypal-rest-sdk": "~0.6.4",
       "express": "*",
       "socket.io": "*",
-      "restler": "*"
+      "restler": "*",
+      "underscore.string": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

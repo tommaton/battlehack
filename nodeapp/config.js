@@ -13,6 +13,10 @@ config.twilio.sid = 'AC3c3b4bbff8b2371a5ca86250ae981f4f';
 config.twilio.authToken = '9f87261dc3292ba8895af6c1a35d9abe';
 config.twilio.fromNumber = '441325952405';
 
+config.justgiving.apiKey = '84e9d29a';
+config.justgiving.getDonation = 'https:\/\/api\/justgiving.com\/%s\/v1\/donation\/%s';
+config.justgiving.searchCharities = 'https:\/\/api\/justgiving.com\/%s/v1/charity/search?q=%s';
+
 module.exports = config;
 
 // env = require('env.json');
