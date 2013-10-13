@@ -24,15 +24,17 @@ window.APP.controller('LenderResponseCtrl', ['$scope', '$routeParams', 'notifica
     };
 
     $scope.sendTxt = function(action) {
+        var userDetails = $scope.$parent;
+
         $scope.$emit('LOADING');
         if(action === 'accept') {
-            Twillio.sendTxt('447932718098', 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has accepted the lending of their ' + $scope.product.title + '.').then(function(response) {
+            Twillio.sendTxt(userDetails.mobile, 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has accepted the lending of their ' + $scope.product.title + '.').then(function(response) {
                 $scope.$emit('NOTLOADING');
                 $scope.response = response;
                 notification.success('Your lending response', 'Your Neighbour will receieve your acceptance text shortly.');
             });
         } else {
-            Twillio.sendTxt('447932718098', 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has rejected the lending of their  ' + $scope.product.title + '.').then(function(response) {
+            Twillio.sendTxt(userDetails.mobile, 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has rejected the lending of their  ' + $scope.product.title + '.').then(function(response) {
                 $scope.$emit('NOTLOADING');
                 $scope.response = response;
                 notification.success('Your lending response', 'Your Neighbour will receieve your rejection text shortly.');

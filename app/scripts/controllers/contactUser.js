@@ -33,7 +33,7 @@ window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', 'notificatio
 
     $scope.sendTxt = function(number) {
         $scope.$emit('LOADING');
-        Twillio.sendTxt('447837043238', 'Neighbour.ly: ' + $scope.product.user.name + ' has a question about your ' + $scope.product.title + '.' + $scope.msg).then(function(response) {
+        Twillio.sendTxt($scope.product.user.mobile, 'Neighbour.ly: ' + $scope.$parent.user.name + ' has a question about your ' + $scope.product.title + '.' + $scope.msg).then(function(response) {
             $scope.$emit('NOTLOADING');
             $scope.response = response;
 
