@@ -7,7 +7,8 @@
       "express": "*",
       "socket.io": "*",
       "request": "*",
-      "underscore.string": "*"
+      "underscore.string": "*",
+      "config": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

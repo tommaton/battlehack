@@ -1,6 +1,5 @@
-var config = require('./../config'),
-    http = require('http'),
-    Step = require('step'),
+var config = require('config'),
+    request = require('request'),
     _ = require('underscore.string');
 
 exports.getDonation = function (donationId, callback) {
@@ -15,22 +14,18 @@ exports.getLocalCharities = function (area, callback) {
     console.log(url);
     var headers = {"headers":{"Content-type": "application/json"}};
 
-    var options = {
-        host: 'www.random.org',
-        path: '/integers/?num=1&min=1&max=10&col=1&base=10&format=plain&rnd=new'
-    };
+    request(url, function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            console.log(body) // Print the google web page.
+            console.log(response);
+            callback(body);
+        }
+        else
+        {
+            console.log(response);
+            console.log(error);
+        }
+    })
 
-    call = function(response) {
-        var str = '';
 
-        response.on('data', function (chunk) {
-            str += chunk;
-        });
-
-        response.on('end', function () {
-            console.log(str);
-        });
-    }
-
-    http.request('http://www.google.co.uk', call).end();
 }
