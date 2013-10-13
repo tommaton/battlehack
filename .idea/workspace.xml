@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2ff996b-9720-4d8f-bb7d-b423f53ed1b6" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Git\battlehack\nodeapp\env.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/config/default.js" afterPath="$PROJECT_DIR$/nodeapp/config/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="battlehack.iws" />
     <ignored path=".idea/workspace.xml" />
