@@ -8,12 +8,8 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           loggedinUserDetails = JSON.parse(localStorage.getItem('user')),
           heartEl = angular.element('.glyphicon-heart');
 
-
-        console.log(loggedInState);
-
         if(loggedInState) {
           loggedInState = loggedinUserDetails.isLoggedIn;
-          console.log(loggedInState);
 
           $scope.user = {
               isLoggedIn: loggedInState,
@@ -42,7 +38,7 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
             b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
         }
         return b;
-    };
+      };
 
       $scope.isLoading = false;
 

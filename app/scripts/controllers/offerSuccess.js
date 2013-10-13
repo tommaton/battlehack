@@ -6,10 +6,10 @@ window.APP.controller('offerSuccessCtrl', ['notification', 'Twillio', '$location
         $scope.getProduct($scope.returnedUser['/offerSuccess?productid'])
     }
 
-    $scope.sendText = function(number) {
+    $scope.sendText = function(number, productName) {
         $scope.$emit('LOADING');
         
-        Twillio.sendTxt($scope.$parent.user.mobile, 'Neighbour.ly: ' +  $scope.returnedUser['username'] + ' has requested the use of your , visit http://localhost:8080/lender-response/' + $scope.returnedUser['/offerSuccess?productid']).then(function(response) {
+        Twillio.sendTxt($scope.$parent.user.mobile, 'Neighbour.ly: ' +  $scope.returnedUser['username'] + ' has requested the use of your ' + productName + ', visit http://localhost:8080/lender-response/' + $scope.returnedUser['/offerSuccess?productid']).then(function(response) {
             $scope.$emit('NOTLOADING');
             $scope.response = response;
             notification.success('Transaction Complete', 'Thank you for more supporting your Neighbourhood');
@@ -20,7 +20,7 @@ window.APP.controller('offerSuccessCtrl', ['notification', 'Twillio', '$location
      $scope.getProduct = function(productId) {
         globalServices.getProduct(productId).then(function(response) {
             $scope.product = response;
-            $scope.sendText($scope.product.user.mobile);
+            $scope.sendText($scope.product.user.mobile, $scope.product.title);
         });
     };
 
