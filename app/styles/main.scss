@@ -140,6 +140,27 @@ Header Styles
         }
     }
 
+    .glyphicon-home {
+        color: #fff;
+        position: absolute;
+        top: 15px;
+        left: 23px;
+        text-decoration: none;
+    }
+
+    .glyphicon-heart {
+        position: absolute;
+        top: 15px;
+        right: 23px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover,
+        &.active {
+            color: #E57263;
+        }
+    }
+
     .btn-group {
         display: block;
         width: 55%;
