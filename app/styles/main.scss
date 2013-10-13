@@ -280,6 +280,22 @@ Home Styles
             }
         }
     }
+
+    #search {
+        margin: 0;
+        display: none;
+
+        &.visible {
+            display: block;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            box-shadow: none;
+            padding: 25px 15px;
+        }
+    }
 }
 
 /* ============================================================
@@ -337,4 +353,23 @@ Mapping Styles
 .mapping-directions-container {
     height: 100%;
     width: 100%;
+}
+
+/* ============================================================
+Send Payment Styles
+============================================================ */
+
+.send-payment-view {
+    input {
+        width: 100%;
+    }
+
+    .list-group a {
+        border-radius: 0;
+    }
+
+    .green {
+        background: #5CB85C;
+        border: 1px solid #468847;
+    }
 }
