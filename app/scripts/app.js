@@ -10,11 +10,15 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           loggedInState = JSON.parse(localStorage.getItem('user')).isLoggedIn;
         }
 
+        $scope.isSearchVisible = false;
+
         $scope.user = {
             isLoggedIn: loggedInState
         };
 
       $scope.isLoading = false;
+
+      $scope.isSearchIconVisible = false;
 
       $scope.$on('LOADING',function(){
           $scope.isLoading = true;
@@ -24,8 +28,15 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           $scope.isLoading = false;
       });
 
-
     }
+
+    $scope.isHome = function() {
+      return (location.hash == "#/home");
+    }
+
+    $scope.toggleSearchVisibility = function() {
+      $scope.isSearchVisible = !$scope.isSearchVisible;
+    };
 
 
     $scope.logOut = function() {
@@ -92,6 +103,10 @@ window.APP.config(function ($routeProvider) {
     .when('/makeOffer/:id', {
       templateUrl: 'views/makeOffer.html',
       controller: 'MakeofferCtrl'
+    })
+    .when('/directions/:id', {
+      templateUrl: 'views/directions.html',
+      controller: 'DirectionsCtrl'
     })
     .otherwise({
       redirectTo: '/'
