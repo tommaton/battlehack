@@ -1,6 +1,6 @@
 'use strict';
 
-window.APP.controller('ProductdetailsCtrl', ['$scope', '$routeParams', 'globalServices', '$location', function ($scope, $routeParams, globalServices, $location) {
+window.APP.controller('ProductdetailsCtrl', ['$scope', '$routeParams', 'notification', 'globalServices', '$location', function ($scope, $routeParams, notification, globalServices, $location) {
     function init() {
         if(!$scope.$parent.user.isLoggedIn){
             $location.path('login');

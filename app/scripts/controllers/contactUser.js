@@ -1,6 +1,6 @@
 'use strict';
 
-window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', '$location', 'globalServices', 'Twillio',  function ($scope, $routeParams, $location, globalServices, Twillio) {
+window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', 'notification', '$location', 'globalServices', 'Twillio',  function ($scope, $routeParams, notification, $location, globalServices, Twillio) {
    
     function init() {
         
@@ -36,6 +36,8 @@ window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', '$location',
         Twillio.sendTxt('447837043238', 'Neighbour.ly: ' + $scope.product.user.name + ' has a question about your ' + $scope.product.title + '.' + $scope.msg).then(function(response) {
             $scope.$emit('NOTLOADING');
             $scope.response = response;
+
+            notification.success('Question Sent', 'Your Neighbour will receieve your text shortly.');
 
         });
     }
