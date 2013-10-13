@@ -109,6 +109,10 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/directions.html',
       controller: 'DirectionsCtrl'
     })
+    .when('/lender-response/:productId', {
+      templateUrl: 'views/lender-response.html',
+      controller: 'LenderResponseCtrl'
+    })
     .otherwise({
       redirectTo: '/'
     });
