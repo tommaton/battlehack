@@ -4,17 +4,22 @@ window.APP = angular.module('battlehackApp', []);
 
 window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $location) {
     function init() {
-      var loggedInState = (localStorage.getItem('user') || false);
+      var loggedInState = (localStorage.getItem('user') || false),
+          loggedinUserDetails = JSON.parse(localStorage.getItem('user'));
 
         if(loggedInState) {
-          loggedInState = JSON.parse(localStorage.getItem('user')).isLoggedIn;
+          loggedInState = loggedinUserDetails.isLoggedIn;
+
+          console.log(loggedinUserDetails);
+          $scope.user = {
+              isLoggedIn: loggedInState,
+              mobile: loggedinUserDetails.mobile,
+              name: loggedinUserDetails.name
+          };
         }
 
         $scope.isSearchVisible = false;
 
-        $scope.user = {
-            isLoggedIn: loggedInState
-        };
 
       $scope.isLoading = false;
 
@@ -32,7 +37,7 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
     $scope.isHome = function() {
       return (location.hash == "#/home");
-    }
+    };
 
     $scope.toggleSearchVisibility = function() {
       console.log($scope.isSearchFieldVisible);
