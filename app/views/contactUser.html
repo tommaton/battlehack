@@ -3,13 +3,13 @@
     <p>Want to learn more about the item?</p>
     <div class="form-group">
         <div class="form-group">
-            <label for="comment">Send a text message to your neighbour.</label>
-            <textarea type="file" class="form-control" id="comment" ng-model="comment" maxlength="160"></textarea>
+            <label for="msg">Send a message to your neighbour:</label>
+            <textarea type="file" class="form-control" id="msg" ng-model="msg" maxlength="120"></textarea>
             <p class="help-block">Characters left: <span class="count">{{count}}</span></p>
         </div>
     </div>
 
-    <div class="">
+    <div class="send">
         <a ng-click="sendTxt()" class="btn btn-primary btn-lg btn-block">Send</a>
     </div>
 </div>

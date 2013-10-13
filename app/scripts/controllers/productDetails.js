@@ -1,6 +1,6 @@
 'use strict';
 
-window.APP.controller('ProductdetailsCtrl', ['$scope', '$routeParams', 'globalServices', '$location', function ($scope, $routeParams, globalServices, $location) {
+window.APP.controller('ProductdetailsCtrl', ['$scope', '$routeParams', 'notification', 'globalServices', '$location', function ($scope, $routeParams, notification, globalServices, $location) {
     function init() {
         if(!$scope.$parent.user.isLoggedIn){
             $location.path('login');
@@ -18,13 +18,9 @@ window.APP.controller('ProductdetailsCtrl', ['$scope', '$routeParams', 'globalSe
 
         var mapContainer = document.getElementById('mapping-container');
 
-        console.log(parseFloat($scope.product.user.location.lat));
-
         var map = new nokia.maps.map.Display(mapContainer, {
                 components: [
                     // Behavior collection
-                    new nokia.maps.map.component.Behavior(),
-                    new nokia.maps.map.component.ZoomBar(),
                     new nokia.maps.map.component.Overview()
                 ],
                 zoomLevel: 14,

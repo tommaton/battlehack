@@ -4,19 +4,26 @@ window.APP = angular.module('battlehackApp', []);
 
 window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $location) {
     function init() {
-      var loggedInState = (localStorage.getItem('user') || false);
+      var loggedInState = (localStorage.getItem('user') || false),
+          loggedinUserDetails = JSON.parse(localStorage.getItem('user'));
 
         if(loggedInState) {
-          loggedInState = JSON.parse(localStorage.getItem('user')).isLoggedIn;
+          loggedInState = loggedinUserDetails.isLoggedIn;
+
+          console.log(loggedinUserDetails);
+          $scope.user = {
+              isLoggedIn: loggedInState,
+              mobile: loggedinUserDetails.mobile,
+              name: loggedinUserDetails.name
+          };
         }
 
         $scope.isSearchVisible = false;
 
-        $scope.user = {
-            isLoggedIn: loggedInState
-        };
 
       $scope.isLoading = false;
+
+      $scope.isSearchIconVisible = false;
 
       $scope.$on('LOADING',function(){
           $scope.isLoading = true;
@@ -26,11 +33,15 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           $scope.isLoading = false;
       });
 
-
     }
 
+    $scope.isHome = function() {
+      return (location.hash == "#/home");
+    };
+
     $scope.toggleSearchVisibility = function() {
-      $scope.isSearchVisible = !$scope.isSearchVisible;
+      console.log($scope.isSearchFieldVisible);
+      $scope.isSearchFieldVisible = !$scope.isSearchFieldVisible;
     };
 
 
@@ -98,6 +109,14 @@ window.APP.config(function ($routeProvider) {
     .when('/makeOffer/:id', {
       templateUrl: 'views/makeOffer.html',
       controller: 'MakeofferCtrl'
+    })
+    .when('/directions/:id', {
+      templateUrl: 'views/directions.html',
+      controller: 'DirectionsCtrl'
+    })
+    .when('/lender-response/:productId', {
+      templateUrl: 'views/lender-response.html',
+      controller: 'LenderResponseCtrl'
     })
     .otherwise({
       redirectTo: '/'

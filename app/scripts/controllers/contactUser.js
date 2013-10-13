@@ -1,6 +1,6 @@
 'use strict';
 
-window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', '$location', 'globalServices', 'Twillio',  function ($scope, $routeParams, $location, globalServices, Twillio) {
+window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', 'notification', '$location', 'globalServices', 'Twillio',  function ($scope, $routeParams, notification, $location, globalServices, Twillio) {
    
     function init() {
         
@@ -10,16 +10,16 @@ window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', '$location',
             
             $scope.neighbour = $routeParams.userId;
             $scope.productId = $routeParams.productId;
-
+            $scope.msg = null;
             $scope.getProduct($scope.productId);
         }
 
         $scope.count = "0";
 
-        var commentEl = angular.element('#comment');
+        var commentEl = angular.element('#msg');
 
         commentEl.on('keyup', function(e) {
-            $scope.count = (158 - parseInt(this.value.length));
+            $scope.count = (118 - parseInt(this.value.length));
         })
     }
 
@@ -31,11 +31,13 @@ window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', '$location',
         });
     };
 
-    $scope.sendTxt = function() {
+    $scope.sendTxt = function(number) {
         $scope.$emit('LOADING');
-        Twillio.sendTxt('447837043238', 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has requested the use of your ' + $scope.product.title + '. Visit: http://localhost:8000/#/home').then(function(response) {
+        Twillio.sendTxt($scope.product.user.mobile, 'Neighbour.ly: ' + $scope.$parent.user.name + ' has a question about your ' + $scope.product.title + '.' + $scope.msg).then(function(response) {
             $scope.$emit('NOTLOADING');
             $scope.response = response;
+
+            notification.success('Question Sent', 'Your Neighbour will receieve your text shortly.');
 
         });
     }

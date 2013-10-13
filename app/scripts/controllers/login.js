@@ -1,19 +1,17 @@
 'use strict';
 
-window.APP.controller('LoginCtrl', ['$scope', '$location', function ($scope, $location) {
+window.APP.controller('LoginCtrl', ['$scope', 'notification', '$location', function ($scope, notification, $location) {
     function init() {
         $scope.user = angular.copy($scope.$parent.user);
-
-        $scope.user.email = "";
-        $scope.user.password = "";
-
     }
 
     $scope.login = function(email, password) {
         $scope.user.email = email;
         $scope.user.password = password;
         $scope.user.isLoggedIn = true;
-
+        $scope.user.mobile = 447837043238;
+        $scope.user.name = "Owain Llewellyn";
+        notification.success('Login Success!', 'Welcome Back, ' + $scope.user.name.split(' ')[0]);
         $scope.updateUser($scope.user);
     };
 

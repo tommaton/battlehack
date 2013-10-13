@@ -5,14 +5,15 @@ neighbourly.core = neighbourly.core || {};
 
 neighbourly.core.global = {
     init: function () {
-        var $window = $(window),
+        var windowHeight = $(window).height(),
             $container = $('.container');
 
-        $container.css('height', $window.height());
+        $container.css('height', windowHeight);
 
         if (!sessionStorage.getItem("currentLocation")) {
             neighbourly.core.global.getLocation();
         }
+
         neighbourly.core.global.handleNavigation();
     },
     handleNavigation: function () {
