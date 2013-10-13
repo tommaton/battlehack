@@ -9,15 +9,17 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
         if(loggedInState) {
           loggedInState = loggedinUserDetails.isLoggedIn;
+
+          console.log(loggedinUserDetails);
+          $scope.user = {
+              isLoggedIn: loggedInState,
+              mobile: loggedinUserDetails.mobile,
+              name: loggedinUserDetails.name
+          };
         }
 
         $scope.isSearchVisible = false;
 
-        $scope.user = {
-            isLoggedIn: loggedInState,
-            mobile: loggedinUserDetails.mobile,
-            name: loggedinUserDetails.name
-        };
 
       $scope.isLoading = false;
 
@@ -35,7 +37,7 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
     $scope.isHome = function() {
       return (location.hash == "#/home");
-    }
+    };
 
     $scope.toggleSearchVisibility = function() {
       console.log($scope.isSearchFieldVisible);
