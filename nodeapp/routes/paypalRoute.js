@@ -13,10 +13,17 @@ exports.route = function (request, response) {
     });
 };
 
-exports.executeRoute = function (request, response) {
+exports.completeRoute = function (request, response) {
     var payerId = request.query.PayerID;
 
-    paypalModule.executePayment(request.session.paymentid, payerId, function(jsonData){
+    paypalModule.completePayment(request.session.paymentid, payerId, function(jsonData){
+        response.send(jsonData);
+    });
+};
+
+exports.cancelRoute = function (request, response) {
+
+    paypalModule.cancelPayment(request.session.paymentid, function(jsonData){
         response.send(jsonData);
     });
 };

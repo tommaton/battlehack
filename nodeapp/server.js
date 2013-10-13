@@ -6,7 +6,6 @@ var express = require('express')
     , paypal = require('./routes/paypalRoute')
     , twilio = require('./routes/twilioRoute')
     , justgiving = require('./routes/justgivingRoute')
-    , test = require('./routes/testRoute')
     , http = require('http')
     , path = require('path')
     , app = express()
@@ -41,10 +40,11 @@ app.configure('production', function(){
 });
 
 app.post('/paypal', paypal.route);
-app.get('/paypal/execute', paypal.executeRoute);
+app.get('/paypal/complete', paypal.completeRoute);
+app.get('/paypal/cancel', paypal.cancelRoute);
 app.post('/twilio', twilio.route);
-app.get('/justgiving', justgiving.route);
-app.get('/test/:price/:description', test.route);
+app.get('/justgiving/donation/:donationId', justgiving.donations);
+app.get('/justgiving/localcharities/:area', justgiving.localCharities);
 
 server.listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));

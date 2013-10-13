@@ -5,7 +5,9 @@
       "twilio": "~1.2.0",
       "paypal-rest-sdk": "~0.6.4",
       "express": "*",
-      "socket.io": "*"
+      "socket.io": "*",
+      "request": "*",
+      "underscore.string": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
