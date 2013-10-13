@@ -338,3 +338,7 @@ Mapping Styles
     height: 100%;
     width: 100%;
 }
+
+.lender-response-view {
+    @extend .product-detail-view;
+}
