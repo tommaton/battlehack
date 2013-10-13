@@ -10,23 +10,23 @@
         <tbody>
           <tr>
             <td><span class="glyphicon glyphicon-calendar"></span> Pick up date</td>
-            <td><input id="from" name="date" type="date" value="2013-10-13"></td>
+            <td><input id="from" name="date" type="date" ng-model="startDate"value="2013-10-13"></td>
           </tr>
 
           <tr>
             <td><span class="glyphicon glyphicon-calendar"></span> Return date</td>
-            <td><input id="to" name="date" type="date" value="2013-10-20"></td>
+            <td><input id="to" name="date" type="date" ng-model="returnDate" value="2013-10-20"></td>
           </tr>
 
           <tr>
             <td><span class="glyphicon glyphicon-gbp"></span> Donation</td>
-            <td><input type="number" placeholder="£1" min="0" max="1000"></td>
+            <td><input type="number" placeholder="£1" min="0" ng-model="amount" max="1000"></td>
           </tr>
         </tbody>
     </table>
 
     <p class="well"><small>Choose the dates you need the item from/to, then simply choose an amount you think the item is worth. Alternatively, you can opt to have the proceeds sent to a charity of your choice.</small></p>
 
-    <a href="#" class="btn btn-primary btn-lg btn-block green">Rent Now</a>
+    <a ng-click="makePayment(amount, product.description)" class="btn btn-primary btn-lg btn-block green">Rent Now</a>
     <a href="#" class="btn btn-primary btn-lg btn-block">Donate to charity</a>
 </div>
