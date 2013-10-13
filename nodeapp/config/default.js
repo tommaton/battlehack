@@ -16,5 +16,5 @@ module.exports = {
         apiKey: "84e9d29a",
         getDonation: "https:\/\/api.justgiving.com\/%s\/v1\/donation\/%s",
         searchCharities: "https:\/\/api.justgiving.com\/%s/v1/charity/search?q=%s&pageSize=3"
-    },
+    }
 }

@@ -4,7 +4,10 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2ff996b-9720-4d8f-bb7d-b423f53ed1b6" name="Default" comment="" />
+    <list default="true" id="e2ff996b-9720-4d8f-bb7d-b423f53ed1b6" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Git\battlehack\nodeapp\env.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/config/default.js" afterPath="$PROJECT_DIR$/nodeapp/config/default.js" />
+    </list>
     <ignored path="battlehack.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,30 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="default.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nodeapp/config/default.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <folding>
-                <marker date="1381648102369" expanded="true" signature="17:714" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="30" selection-start="823" selection-end="823" vertical-scroll-proportion="0.6652174" vertical-offset="0" max-vertical-offset="1071">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodeapp/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="4" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+            <state line="18" column="5" selection-start="711" selection-end="711" vertical-scroll-proportion="0.4273743" vertical-offset="0" max-vertical-offset="716">
               <folding />
             </state>
           </provider>
@@ -130,10 +113,10 @@
         <option value="$PROJECT_DIR$/nodeapp/config/default.json" />
         <option value="$PROJECT_DIR$/nodeapp/services/twilio.js" />
         <option value="$PROJECT_DIR$/nodeapp/config/default.yaml" />
-        <option value="$PROJECT_DIR$/nodeapp/config/default.js" />
         <option value="$PROJECT_DIR$/nodeapp/services/paypal.js" />
         <option value="$PROJECT_DIR$/nodeapp/services/justgiving.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/nodeapp/config/default.js" />
       </list>
     </option>
   </component>
@@ -428,13 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodeapp/env.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="65" selection-start="441" selection-end="441" vertical-scroll-proportion="0.17246377" vertical-offset="0" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/paypal-rest-sdk/lib/paypal-rest-sdk.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.5642457" vertical-offset="1836" max-vertical-offset="7395">
@@ -456,46 +432,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodeapp/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="4" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeapp/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="158" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeapp/config/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding>
-            <marker date="1381648102369" expanded="true" signature="17:714" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeapp/services/justgiving.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodeapp/routes/justgivingRoute.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="52" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeapp/services/paypal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
           <folding />
         </state>
       </provider>
@@ -507,9 +446,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nodeapp/services/justgiving.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeapp/services/paypal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="22" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeapp/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="46" selection-start="158" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="30" selection-start="823" selection-end="823" vertical-scroll-proportion="0.6652174" vertical-offset="0" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeapp/config/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="711" selection-end="711" vertical-scroll-proportion="0.4273743" vertical-offset="0" max-vertical-offset="716">
           <folding />
         </state>
       </provider>
