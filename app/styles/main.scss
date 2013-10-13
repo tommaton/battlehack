@@ -296,16 +296,32 @@ Home Styles
     padding: 0;
     background: #337AB7;
 
+    .well {
+        border-radius: 0;
+        margin: 0;
+        color: #fff;
+        border: none;
+        background: #16334D;
+
+        h2 {
+            margin: 0 0 10px;
+            font-size: 26px;
+            font-weight: lighter;
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+            text-align: center;
+        }
+    }
+
     .list-group {
         margin: 0;
         border: none;
 
         &:nth-child(even) a.active {
             background: #6aa3d5;
-
-            &:hover {
-                background: #5093cd;
-            }
         }
 
         a.active {
@@ -314,12 +330,8 @@ Home Styles
             border: none;
             height: 62px;
 
-            &:hover {
-                background: #5d9bd1;
-            }
-
             &:active {
-                background: #428BCA;
+                background: #438bc9;
             }
 
             h4,

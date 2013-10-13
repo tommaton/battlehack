@@ -3,6 +3,11 @@
       <input type="text" class="form-control" id="searchText" placeholder="Enter a search term..." ng-model="searchText">
     </div>
 
+    <div class="well">
+        <h2>Welcome to Neighbour.ly!</h2>
+        <p>The social lending service near you.</p>
+    </div>
+
     <div class="list-group" ng-repeat="product in products | filter:searchText">
       <a href="#/product/{{product.id}}" class="list-group-item active">
         <span class="glyphicon glyphicon-{{getIconClass(product.category)}}"></span>
