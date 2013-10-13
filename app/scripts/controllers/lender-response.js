@@ -1,6 +1,6 @@
 'use strict';
 
-window.APP.controller('LenderResponseCtrl', ['$scope', '$routeParams', '$location', 'globalServices', 'Twillio',  function ($scope, $routeParams, $location, globalServices, Twillio) {
+window.APP.controller('LenderResponseCtrl', ['$scope', '$routeParams', 'notification', '$location', 'globalServices', 'Twillio',  function ($scope, $routeParams, notification, $location, globalServices, Twillio) {
    
     function init() {
         
@@ -29,13 +29,13 @@ window.APP.controller('LenderResponseCtrl', ['$scope', '$routeParams', '$locatio
             Twillio.sendTxt('447932718098', 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has accepted the lending of their ' + $scope.product.title + '.').then(function(response) {
                 $scope.$emit('NOTLOADING');
                 $scope.response = response;
-
+                notification.success('Your lending response', 'Your Neighbour will receieve your acceptance text shortly.');
             });
         } else {
-            Twillio.sendTxt('447932718098', 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has rejected the lending of their  ' + $scope.product.title + '. Visit: http://localhost:8000/#/home').then(function(response) {
+            Twillio.sendTxt('447932718098', 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has rejected the lending of their  ' + $scope.product.title + '.').then(function(response) {
                 $scope.$emit('NOTLOADING');
                 $scope.response = response;
-
+                notification.success('Your lending response', 'Your Neighbour will receieve your rejection text shortly.');
             });
         }
         
