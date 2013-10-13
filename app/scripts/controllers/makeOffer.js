@@ -23,7 +23,7 @@ window.APP.controller('MakeofferCtrl', ['$scope', '$routeParams', '$location', '
 
     $scope.makePayment = function(price, desc) {
         $scope.$emit('LOADING');
-        Paypal.makePayment(price, desc).then(function(response) {
+        Paypal.makePayment(price, desc, $scope.product.id, $scope.product.user.name).then(function(response) {
 
             $scope.paypalResponse = response;
             location.href = $scope.paypalResponse.links[1].href;
