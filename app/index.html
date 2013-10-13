@@ -29,9 +29,9 @@
     </nav>
 
     <header class="header" ng-show="user.isLoggedIn">
-        <a href="#" class="nav-icon">&#9776;</a>
-        <a href="#" class="glyphicon glyphicon-home" ng-show="isProduct()"></a>
-        <a href="#" class="glyphicon glyphicon-heart" ng-show="isProduct()"></a>
+        <a href="#" class="nav-icon" ng-hide="isProduct()">&#9776;</a>
+        <a ng-href="#" class="glyphicon glyphicon-home" ng-show="isProduct()"></a>
+        <a ng-click="toggleState()" class="glyphicon glyphicon-heart" ng-show="isProduct()"></a>
 
         <div class="btn-group" ng-show="isHome()">
           <a href="#/home" class="btn btn-default"><span class="glyphicon glyphicon-list-alt"></span> List</a>

@@ -5,7 +5,9 @@ window.APP = angular.module('battlehackApp', []);
 window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $location) {
     function init() {
       var loggedInState = (localStorage.getItem('user') || false),
-          loggedinUserDetails = JSON.parse(localStorage.getItem('user'));
+          loggedinUserDetails = JSON.parse(localStorage.getItem('user')),
+          heartEl = angular.element('.glyphicon-heart');
+
 
         if(loggedInState) {
           loggedInState = loggedinUserDetails.isLoggedIn;
@@ -17,8 +19,15 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           };
         }
 
-        $scope.isSearchVisible = false;
+      $scope.isSearchVisible = false;
 
+      $scope.$watch('isHeartActive', function(value) {
+        if(value){
+          heartEl.addClass('active');
+        } else {
+          heartEl.removeClass('active');
+        }
+      })
 
       $scope.isLoading = false;
 
@@ -34,13 +43,16 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
     }
 
+    $scope.toggleState = function() {
+      $scope.isHeartActive = !$scope.isHeartActive;
+    };
+
     $scope.isHome = function() {
       return (location.hash == "#/home");
     };
 
     $scope.isProduct = function() {
-      console.log(location.hash);
-      return (location.hash == "#/product/");
+      return (location.hash.split('/')[1] == "product");
     };
 
     $scope.toggleSearchVisibility = function() {
