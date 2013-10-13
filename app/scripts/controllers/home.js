@@ -7,7 +7,10 @@ window.APP.controller('HomeCtrl', ['$location', '$scope', 'globalServices', func
         } else {
             $scope.products = null;
             $scope.getProducts();
+
+            $scope.searchText = null;
         }
+
     }
     
     $scope.getProducts = function() {

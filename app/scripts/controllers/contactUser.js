@@ -1,6 +1,7 @@
 'use strict';
 
 window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', '$location', 'globalServices', 'Twillio',  function ($scope, $routeParams, $location, globalServices, Twillio) {
+   
     function init() {
         
         if(!$scope.$parent.user.isLoggedIn){
@@ -20,9 +21,7 @@ window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', '$location',
         commentEl.on('keyup', function(e) {
             $scope.count = (158 - parseInt(this.value.length));
         })
-
     }
-
 
     $scope.getProduct = function(productId) {
         $scope.$emit('LOADING');
@@ -42,4 +41,5 @@ window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', '$location',
     }
 
     init();
-  }]);
+
+}]);

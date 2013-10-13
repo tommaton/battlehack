@@ -89,7 +89,7 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/respondToOffer.html',
       controller: 'RespondtoofferCtrl'
     })
-    .when('/makeOffer', {
+    .when('/makeOffer/:id', {
       templateUrl: 'views/makeOffer.html',
       controller: 'MakeofferCtrl'
     })

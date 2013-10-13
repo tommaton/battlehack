@@ -18,11 +18,9 @@ window.APP.controller('LoginCtrl', ['$scope', '$location', function ($scope, $lo
     };
 
     $scope.updateUser = function(user) {
-        console.log('updating user with: ', user);
         $scope.$parent.user = user;
-        
+
         localStorage.setItem("user", JSON.stringify($scope.$parent.user));
-        console.log('updated user is: ', $scope.$parent.user);
         $location.path('home');
     }
 
