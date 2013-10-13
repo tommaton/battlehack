@@ -5,14 +5,22 @@ neighbourly.core = neighbourly.core || {};
 
 neighbourly.core.global = {
     init: function () {
-        var $window = $(window),
-            $container = $('.container');
+        var windowHeight = $(window).height(),
+            $container = $('.container'),
+            $searchBtn = $('.glyphicon-search'),
+            $searchBar = $container.find('#search');
 
-        $container.css('height', $window.height());
+        $container.css('height', windowHeight);
 
         if (!sessionStorage.getItem("currentLocation")) {
             neighbourly.core.global.getLocation();
         }
+
+        $searchBtn.on('click', function(e) {
+            e.preventDefault();
+            $searchBar.toggleClass('visible');
+        });
+
         neighbourly.core.global.handleNavigation();
     },
     handleNavigation: function () {
