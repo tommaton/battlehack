@@ -10,9 +10,6 @@ window.APP.controller('HomeCtrl', ['$location', '$scope', 'globalServices', func
             $scope.$parent.isTopNavVisible = true;
             $scope.searchText = null;
         }
-
-
-
     }
     
     $scope.getProducts = function() {
@@ -21,6 +18,36 @@ window.APP.controller('HomeCtrl', ['$location', '$scope', 'globalServices', func
             $scope.$emit('NOTLOADING');
             $scope.products = response;
         });
+    };
+
+    $scope.getIconClass = function(category) {
+        var iconClass = '';
+
+        switch(category) {
+            case 'living-room':
+                iconClass = 'print'
+                break;
+            case 'garden':
+                iconClass = 'tree-conifer'
+                break;          
+            case 'kitchen':
+                iconClass = 'cutlery'
+                break;
+            case 'tools':
+                iconClass = 'wrench'
+                break;
+            case 'other':
+                iconClass = 'question-sign'
+                break;
+            case 'bedroom':
+                iconClass = 'adjust'
+                break;
+            default:
+                iconClass = 'leaf'
+                break;
+        }
+
+        return iconClass;
     };
 
     init();
