@@ -18,6 +18,8 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
       $scope.isLoading = false;
 
+      $scope.isSearchIconVisible = false;
+
       $scope.$on('LOADING',function(){
           $scope.isLoading = true;
       });
@@ -26,7 +28,10 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           $scope.isLoading = false;
       });
 
+    }
 
+    $scope.isHome = function() {
+      return (location.hash == "#/home");
     }
 
     $scope.toggleSearchVisibility = function() {

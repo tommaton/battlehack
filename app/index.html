@@ -21,8 +21,9 @@
     <nav class="navigation">
         <ul>
             <li><a href="#/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="#/home"><span class="glyphicon glyphicon-list"></span> Categories</a></li>
-            <li><a href="#/settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+            <li><a href="#/home"><span class="glyphicon glyphicon-list"></span> Featured</a></li>
+            <li><a href="#/map"><span class="glyphicon glyphicon-cog"></span> Near Me</a></li>
+            <li><a href="#/popular"><span class="glyphicon glyphicon-cog"></span> Popular</a></li>
             <li><a ng-click="logOut()"><span class="glyphicon glyphicon-circle-arrow-left"></span> Logout</a></li>
         </ul>
     </nav>
@@ -35,13 +36,14 @@
           <a href="#/map" class="btn btn-default"><span class="glyphicon glyphicon-map-marker"></span> Map</a>
         </div>
 
-        <a ng-click="toggleSearchVisibility()" class="glyphicon glyphicon-search"></a>
+        <a ng-click="toggleSearchVisibility()" ng-show="isHome()" class="glyphicon glyphicon-search"></a>
     </header>
 
     <div class="container" ng-view=""></div>
 
 
     <div data-ng-show="isLoading" class="loading glyphicon glyphicon-refresh"></div>
+    <div data-notifications data-ng-show="isNotificationVisible"></div>
 
 
     <!-- mapping library -->    
@@ -72,16 +74,16 @@
     <script src="scripts/controllers/home.js"></script>
     <script src="scripts/controllers/productDetails.js"></script>
     <script src="scripts/controllers/login.js"></script>
-    <script src="scripts/controllers/confirmationSuccess.js"></script>
-    <script src="scripts/controllers/confirmationFail.js"></script>
 
     <script src="scripts/modules/global.js"></script>
     <script src="scripts/controllers/contactUser.js"></script>
     <script src="scripts/controllers/map.js"></script>
     <script src="scripts/controllers/respondToOffer.js"></script>
     <script src="scripts/controllers/makeOffer.js"></script>
+    <script src="scripts/directives/notification.js"></script>
     <script src="scripts/controllers/directions.js"></script>
     <script src="scripts/controllers/lender-response.js"></script>
+    <script src="scripts/services/notifications.js"></script>
     <!-- endbuild -->
 </body>
 </html>
