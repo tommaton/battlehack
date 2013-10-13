@@ -29,11 +29,10 @@
     </nav>
 
     <header class="header" ng-show="user.isLoggedIn">
-        <a href="#" class="nav-icon" ng-hide="isProduct()">&#9776;</a>
-        <a ng-href="#" class="glyphicon glyphicon-home" ng-show="isProduct()"></a>
+        <a href="#" class="nav-icon">&#9776;</a>
         <a ng-click="toggleState()" class="glyphicon glyphicon-heart" ng-show="isProduct()"></a>
 
-        <h6 ng-hide="showLogo()">Neighbour.ly</h6>
+        <h6 ng-hide="showLogo()"><a href="/#/home/">Neighbour.ly</a></h6>
 
         <div class="btn-group" ng-show="isHome()">
           <a href="#/home" class="btn btn-default"><span class="glyphicon glyphicon-list-alt"></span> List</a>
@@ -45,10 +44,8 @@
 
     <div class="container" ng-view=""></div>
 
-
     <div data-ng-show="isLoading" class="loading glyphicon glyphicon-refresh"></div>
     <div data-notifications data-ng-show="isNotificationVisible"></div>
-
 
     <!-- mapping library -->
     <script type="text/javascript" charset="UTF-8" src="http://js.cit.api.here.com/se/2.5.3/jsl.js?with=all"></script>

@@ -140,14 +140,6 @@ Header Styles
         }
     }
 
-    .glyphicon-home {
-        color: #fff;
-        position: absolute;
-        top: 15px;
-        left: 23px;
-        text-decoration: none;
-    }
-
     .glyphicon-heart {
         position: absolute;
         top: 15px;
@@ -206,6 +198,11 @@ Header Styles
         text-align: center;
         width: 100%;
         line-height: 2.2;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }
 
@@ -309,11 +306,14 @@ Home Styles
         margin: 0;
         color: #fff;
         border: none;
-        background: #16334D;
+        height: 150px;
+        box-shadow: inset 0px 0px 185px 20px rgba(3, 0, 40, 0.75);
+        background: #16334D url(/images/header1.jpg) center -80px no-repeat;
+        background-size: cover;
 
         h2 {
-            margin: 0 0 10px;
-            font-size: 26px;
+            margin: 35px 0 5px;
+            font-size: 24px;
             font-weight: lighter;
             text-align: center;
         }
