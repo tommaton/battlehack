@@ -2,7 +2,6 @@
 
 window.APP.controller('HomeCtrl', ['$location', '$scope', 'globalServices', function ($location, $scope, globalServices) {
     function init() {
-        console.log($scope.$parent.user);
         if($scope.$parent.user){
             $scope.products = null;
             $scope.getProducts();
