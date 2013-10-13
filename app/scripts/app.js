@@ -22,7 +22,7 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
       $scope.isLoading = false;
 
-      $scope.isSearchIconVisible = false;
+      $scope.isTopNavVisible = false;
 
       $scope.$on('LOADING',function(){
           $scope.isLoading = true;

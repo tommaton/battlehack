@@ -32,7 +32,7 @@
     <header class="header" ng-show="user.isLoggedIn">
         <a href="#" class="nav-icon">&#9776;</a>
 
-        <div class="btn-group">
+        <div class="btn-group" ng-show="isHome()">
           <a href="#/home" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> List</a>
           <a href="#/map" class="btn btn-default"><span class="glyphicon glyphicon-map-marker"></span> Map</a>
         </div>
