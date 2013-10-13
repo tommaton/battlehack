@@ -1,6 +1,6 @@
 'use strict';
 
-window.APP.controller('LoginCtrl', ['$scope', '$location', function ($scope, $location) {
+window.APP.controller('LoginCtrl', ['$scope', 'notification', '$location', function ($scope, notification, $location) {
     function init() {
         $scope.user = angular.copy($scope.$parent.user);
 
@@ -13,7 +13,7 @@ window.APP.controller('LoginCtrl', ['$scope', '$location', function ($scope, $lo
         $scope.user.email = email;
         $scope.user.password = password;
         $scope.user.isLoggedIn = true;
-
+        notification.success('Login Success!', '');
         $scope.updateUser($scope.user);
     };
 
