@@ -10,6 +10,8 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           loggedInState = JSON.parse(localStorage.getItem('user')).isLoggedIn;
         }
 
+        $scope.isSearchVisible = false;
+
         $scope.user = {
             isLoggedIn: loggedInState
         };
@@ -26,6 +28,10 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
 
     }
+
+    $scope.toggleSearchVisibility = function() {
+      $scope.isSearchVisible = !$scope.isSearchVisible;
+    };
 
 
     $scope.logOut = function() {
@@ -89,7 +95,7 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/respondToOffer.html',
       controller: 'RespondtoofferCtrl'
     })
-    .when('/makeOffer', {
+    .when('/makeOffer/:id', {
       templateUrl: 'views/makeOffer.html',
       controller: 'MakeofferCtrl'
     })

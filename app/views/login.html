@@ -12,8 +12,8 @@
       <input type="password" class="form-control" data-ng-model="user.password" name="password" required id="password" placeholder="Password">
     </div>
 
-    <button type="button" data-ng-click="login(user.email, user.password)" data-ng-disabled="loginform.$invalid" class="btn btn-primary btn-lg btn-block">Sign in</button>
+    <input type="submit" data-ng-click="login(user.email, user.password)" data-ng-disabled="loginform.$invalid" class="btn btn-primary btn-lg btn-block" value="Sign in" />
 
-    <p>
+    <p>Or <a href="#">register</a> for a new account</p>
   </form>
 </div>
