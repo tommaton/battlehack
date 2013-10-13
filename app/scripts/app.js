@@ -38,6 +38,11 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
       return (location.hash == "#/home");
     };
 
+    $scope.isProduct = function() {
+      console.log(location.hash);
+      return (location.hash == "#/product/");
+    };
+
     $scope.toggleSearchVisibility = function() {
       console.log($scope.isSearchFieldVisible);
       $scope.isSearchFieldVisible = !$scope.isSearchFieldVisible;
