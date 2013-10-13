@@ -24,6 +24,7 @@ body {
 .container {
     position: relative;
     width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0;
     transition: transform 0.3s ease;
@@ -125,6 +126,7 @@ Header Styles
     height: 45px;
     color: #fff;
     background: #337AB7;
+    border-bottom: 3px solid #2c689c;
     transition: transform 0.3s ease;
 
     .nav-icon {
@@ -162,19 +164,19 @@ Header Styles
         .btn {
             padding: 0;
             width: 50%;
-            height: 45px;
+            height: 42px;
             border: none;
             color: #fff;
             line-height: 3;
             background: inherit;
 
             &:first-child {
-                border-left: 1px solid rgba(255,255,255,0.1);
-                border-right: 1px solid rgba(255,255,255,0.1);
+                border-left: 1px solid rgba(0,0,0,0.1);
+                border-right: 1px solid rgba(0,0,0,0.1);
             }
 
             &:last-child {
-                border-right: 1px solid rgba(255,255,255,0.1);
+                border-right: 1px solid rgba(0,0,0,0.1);
             }
 
             .glyphicon {
@@ -307,7 +309,7 @@ Home Styles
         color: #fff;
         border: none;
         height: 150px;
-        box-shadow: inset 0px 0px 185px 20px rgba(3, 0, 40, 0.75);
+        box-shadow: inset 0px 0px 150px 20px rgba(3, 0, 40, 0.7);
         background: #16334D url(/images/header1.jpg) center -80px no-repeat;
         background-size: cover;
 
