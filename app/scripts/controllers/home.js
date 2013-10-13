@@ -7,7 +7,7 @@ window.APP.controller('HomeCtrl', ['$location', '$scope', 'globalServices', func
         } else {
             $scope.products = null;
             $scope.getProducts();
-            $scope.$parent.isSearchIconVisible = true;
+            $scope.$parent.isTopNavVisible = true;
             $scope.searchText = null;
         }
     }
