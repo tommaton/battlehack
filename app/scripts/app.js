@@ -10,10 +10,11 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           loggedInState = JSON.parse(localStorage.getItem('user')).isLoggedIn;
         }
 
+        $scope.isSearchVisible = false;
+
         $scope.user = {
             isLoggedIn: loggedInState
         };
-
 
       $scope.isLoading = false;
 
@@ -27,6 +28,10 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
 
     }
+
+    $scope.toggleSearchVisibility = function() {
+      $scope.isSearchVisible = !$scope.isSearchVisible;
+    };
 
 
     $scope.logOut = function() {
@@ -78,17 +83,21 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/confirmationFail.html',
       controller: 'ConfirmationfailCtrl'
     })
-    .when('/confirmDetails', {
-      templateUrl: 'views/confirmDetails.html',
-      controller: 'ConfirmdetailsCtrl'
-    })
     .when('/contactUser/:userId/product/:productId', {
       templateUrl: 'views/contactUser.html',
       controller: 'ContactuserCtrl'
     })
+    .when('/map', {
+      templateUrl: 'views/map.html',
+      controller: 'MapCtrl'
+    })
     .when('/respondToOffer', {
       templateUrl: 'views/respondToOffer.html',
       controller: 'RespondtoofferCtrl'
+    })
+    .when('/makeOffer/:id', {
+      templateUrl: 'views/makeOffer.html',
+      controller: 'MakeofferCtrl'
     })
     .otherwise({
       redirectTo: '/'

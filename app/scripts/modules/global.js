@@ -10,7 +10,7 @@ neighbourly.core.global = {
 
         $container.css('height', $window.height());
 
-        if (!localStorage.getItem("currentLocation")) {
+        if (!sessionStorage.getItem("currentLocation")) {
             neighbourly.core.global.getLocation();
         }
         neighbourly.core.global.handleNavigation();
@@ -40,7 +40,7 @@ neighbourly.core.global = {
             'latitude': latitude,
             'longitude': longitude
         });
-        localStorage.setItem('currentLocation', latLong);
+        sessionStorage.setItem('currentLocation', latLong);
     }
 };
 

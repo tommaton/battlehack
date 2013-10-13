@@ -14,19 +14,9 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-
-
 </head>
-  <body ng-app="battlehackApp" ng-controller="AppCtrl">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-    <!--[if lt IE 9]>
-      <script src="bower_components/es5-shim/es5-shim.js"></script>
-      <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
-
+<body ng-app="battlehackApp" ng-controller="AppCtrl">
     <!-- Add your site or application content here -->
     <nav class="navigation">
         <ul>
@@ -41,16 +31,18 @@
         <a href="#" class="nav-icon">&#9776;</a>
 
         <div class="btn-group">
-          <button type="button" class="btn btn-default">List</button>
-          <button type="button" class="btn btn-default">Map</button>
+          <a href="#/home" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> List</a>
+          <a href="#/map" class="btn btn-default"><span class="glyphicon glyphicon-map-marker"></span> Map</a>
         </div>
 
-        <a href="#" class="glyphicon glyphicon-search"></a>
+        <a ng-click="toggleSearchVisibility()" class="glyphicon glyphicon-search"></a>
     </header>
 
     <div class="container" ng-view=""></div>
 
+
     <div data-ng-show="isLoading" class="loading glyphicon glyphicon-refresh"></div>
+
 
     <!-- mapping library -->
     <script src="http://js.api.here.com/se/2.5.3/jsl.js" type="text/javascript" charset="utf-8"></script>
@@ -84,9 +76,10 @@
     <script src="scripts/controllers/confirmationFail.js"></script>
 
     <script src="scripts/modules/global.js"></script>
-    <script src="scripts/controllers/confirmDetails.js"></script>
     <script src="scripts/controllers/contactUser.js"></script>
+    <script src="scripts/controllers/map.js"></script>
     <script src="scripts/controllers/respondToOffer.js"></script>
+    <script src="scripts/controllers/makeOffer.js"></script>
     <!-- endbuild -->
 </body>
 </html>
