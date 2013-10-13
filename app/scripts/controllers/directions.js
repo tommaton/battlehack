@@ -11,28 +11,67 @@ window.APP.controller('DirectionsCtrl', ['$scope', '$routeParams', 'globalServic
         }
     }
 
-    $scope.loadMap = function() {
+
+    $scope.loadMapping = function() {
 
         nokia.Settings.set('app_id', 'kmwpUb08UtDm0fNWVk7I');
         nokia.Settings.set('app_code', 'olY6cOnIbswrXEgZ53cGUw');
 
-        var mapContainer = document.getElementById('mapping-container');
-
-        var map = new nokia.maps.map.Display(mapContainer, {
+        var mapContainer = document.getElementById('mapping-directions-container'),
+            userLocation = JSON.parse(sessionStorage.getItem('currentLocation')),
+            map = new nokia.maps.map.Display(mapContainer, {
                 components: [
                     // Behavior collection
-                    new nokia.maps.map.component.Behavior(),
-                    new nokia.maps.map.component.ZoomBar(),
-                    new nokia.maps.map.component.Overview()
+                    new nokia.maps.map.component.Behavior()
                 ],
                 zoomLevel: 14,
                 center: [parseFloat($scope.product.user.location.lat), parseFloat($scope.product.user.location.long)]
-            }
-        );
+            }),
+            router = new nokia.maps.routing.Manager();
+            
 
-        var standardMarker = new nokia.maps.map.StandardMarker([parseFloat($scope.product.user.location.lat), parseFloat($scope.product.user.location.long)]);
-        // Next we need to add it to the map's object collection so it will be rendered onto the map.
-        map.objects.add(standardMarker);
+        var onRouteCalculated = function (observedRouter, key, value) {
+            if (value == "finished") {
+                var routes = observedRouter.getRoutes();
+                
+                //create the default map representation of a route
+                var mapRoute = new nokia.maps.routing.component.RouteResultSet(routes[0]).container;
+                map.objects.add(mapRoute);
+                
+                //Zoom to the bounding box of the route
+                map.zoomTo(mapRoute.getBoundingBox(), false, "default");
+            } else if (value == "failed") {
+                alert("The routing request failed.");
+            }
+        };
+
+        /* We create on observer on router's "state" property so the above created
+         * onRouteCalculated we be called once the route is calculated
+         */
+        router.addObserver("state", onRouteCalculated);
+
+        // Create waypoints
+        var waypoints = new nokia.maps.routing.WaypointParameterList();
+        waypoints.addCoordinate(new nokia.maps.geo.Coordinate(parseFloat(userLocation.latitude), parseFloat(userLocation.longitude)));
+        waypoints.addCoordinate(new nokia.maps.geo.Coordinate(parseFloat($scope.product.user.location.lat), parseFloat($scope.product.user.location.long)));
+
+        /* Properties such as type, transportModes, options, trafficMode can be
+         * specified as second parameter in performing the routing request.
+         * 
+         * See for the mode options the "nokia.maps.routing.Mode" section in the developer's guide
+         */
+        var modes = [{
+            type: "shortest", 
+            transportModes: ["car"],
+            options: "avoidTollroad",
+            trafficMode: "default"
+        }];
+
+        // Trigger route calculation after the map emmits the "displayready" event
+        map.addListener("displayready", function () {
+            router.calculateRoute(waypoints, modes);
+        }, false);
+        
     };
 
     $scope.getProduct = function(productId) {
@@ -40,9 +79,9 @@ window.APP.controller('DirectionsCtrl', ['$scope', '$routeParams', 'globalServic
         globalServices.getProduct(productId).then(function(response) {
             $scope.$emit('NOTLOADING');
             $scope.product = response;
-            $scope.loadMap();
+            $scope.loadMapping();
         });
     };
 
     init();
-  }]);
+}]);
