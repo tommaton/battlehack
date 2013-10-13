@@ -21,9 +21,8 @@
     <nav class="navigation">
         <ul>
             <li><a href="#/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="#/home"><span class="glyphicon glyphicon-list"></span> Featured</a></li>
-            <li><a href="#/map"><span class="glyphicon glyphicon-cog"></span> Near Me</a></li>
-            <li><a href="#/popular"><span class="glyphicon glyphicon-cog"></span> Popular</a></li>
+            <li><a href="#/map"><span class="glyphicon glyphicon-map-marker"></span> Near Me</a></li>
+            <li><a href="#/popular"><span class="glyphicon glyphicon-heart"></span> Popular</a></li>
             <li><a ng-click="logOut()"><span class="glyphicon glyphicon-circle-arrow-left"></span> Logout</a></li>
         </ul>
     </nav>
@@ -46,7 +45,7 @@
     <div data-notifications data-ng-show="isNotificationVisible"></div>
 
 
-    <!-- mapping library -->    
+    <!-- mapping library -->
     <script type="text/javascript" charset="UTF-8" src="http://js.cit.api.here.com/se/2.5.3/jsl.js?with=all"></script>
 
     <script src="bower_components/jquery/jquery.js"></script>
