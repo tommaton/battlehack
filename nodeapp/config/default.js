@@ -2,7 +2,7 @@ module.exports = {
     paypal: {
         clientId: "AdeqvhCTW_h3FI3Zv96BQUNvWnaJfuicpddS5WyqSLYrZElghhiwQRXsGFYt",
         clientSecret:  "ECuYzxCLb7vhh0ozh3xHtm-iy_XMKP8iSvjky5fe1vhNl1tExelpm7QxeyiU",
-        returnUrl: "http://localhost:8080/#/offerSuccess",
+        returnUrl: "http://localhost:8080/#/offerSuccess?productid=%s&username=%s",
         cancelUrl: "http://localhost:8080/#/paymentcancel"
     },
 

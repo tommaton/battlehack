@@ -1,12 +1,15 @@
 var paypal_sdk = require('paypal-rest-sdk'),
-    config = require('config')
+    config = require('config'),
+    _ = require('underscore.string');
 
-exports.paypal = function (price, description, callback) {
+exports.paypal = function (price, description, productid, username, callback) {
     paypal_sdk.configure({
         'host': 'api.sandbox.paypal.com',
         'client_id': config.paypal.clientId,
         'client_secret': config.paypal.clientSecret
     });
+
+    var returnUrl = _.sprintf(config.paypal.returnUrl, productid, username);
 
     var create_payment_json = {
         "intent": "sale",
@@ -14,7 +17,7 @@ exports.paypal = function (price, description, callback) {
             "payment_method": "paypal"
         },
         "redirect_urls": {
-            "return_url": config.paypal.returnUrl,
+            "return_url": returnUrl,
             "cancel_url": config.paypal.cancelUrl
         },
         "transactions": [{
