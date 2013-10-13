@@ -4,15 +4,7 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2ff996b-9720-4d8f-bb7d-b423f53ed1b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/config/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodeapp/config/runtime.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/services/justgiving.js" afterPath="$PROJECT_DIR$/nodeapp/services/justgiving.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/services/paypal.js" afterPath="$PROJECT_DIR$/nodeapp/services/paypal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeapp/services/twilio.js" afterPath="$PROJECT_DIR$/nodeapp/services/twilio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e2ff996b-9720-4d8f-bb7d-b423f53ed1b6" name="Default" comment="" />
     <ignored path="battlehack.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,7 +85,7 @@
       <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="18" selection-start="247" selection-end="247" vertical-scroll-proportion="0.24637681" vertical-offset="0" max-vertical-offset="1071">
+            <state line="27" column="30" selection-start="823" selection-end="823" vertical-scroll-proportion="0.6652174" vertical-offset="0" max-vertical-offset="1071">
               <folding />
             </state>
           </provider>
@@ -517,7 +509,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="247" selection-end="247" vertical-scroll-proportion="0.24637681" vertical-offset="0" max-vertical-offset="1071">
+        <state line="27" column="30" selection-start="823" selection-end="823" vertical-scroll-proportion="0.6652174" vertical-offset="0" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>
