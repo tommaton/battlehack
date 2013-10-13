@@ -92,7 +92,7 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
     };
 
     $scope.isUserLoggedIn = function() {
-      
+
         if(!$scope.user.isLoggedIn) {
             return false;
         } else {
@@ -102,7 +102,7 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
     init();
 }]);
-  
+
 window.APP.config(function ($routeProvider) {
   $routeProvider
     .when('/', {
