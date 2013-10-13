@@ -1,5 +1,5 @@
 <div class="home-view view">
-    <div class="form-group">
+    <div class="form-group" ng-show="isSearchVisible">
       <input type="text" class="form-control" id="searchText" ng-model="searchText">
     </div>
     <div class="list-group" ng-repeat="product in products | filter:searchText">

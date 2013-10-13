@@ -10,6 +10,8 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           loggedInState = JSON.parse(localStorage.getItem('user')).isLoggedIn;
         }
 
+        $scope.isSearchVisible = false;
+
         $scope.user = {
             isLoggedIn: loggedInState
         };
@@ -26,6 +28,10 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
 
     }
+
+    $scope.toggleSearchVisibility = function() {
+      $scope.isSearchVisible = !$scope.isSearchVisible;
+    };
 
 
     $scope.logOut = function() {
