@@ -13,6 +13,8 @@ window.APP.controller('LoginCtrl', ['$scope', 'notification', '$location', funct
         $scope.user.email = email;
         $scope.user.password = password;
         $scope.user.isLoggedIn = true;
+        $scope.user.mobile = 447837043238;
+        $scope.user.name = "Owain Llewellyn";
         notification.success('Login Success!', '');
         $scope.updateUser($scope.user);
     };
