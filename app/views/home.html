@@ -5,6 +5,7 @@
 
     <div class="list-group" ng-repeat="product in products | filter:searchText">
       <a href="#/product/{{product.id}}" class="list-group-item active">
+        <span class="glyphicon glyphicon-{{getIconClass(product.category)}}"></span>
         <h4 class="list-group-item-heading">{{product.title}}</h4>
         <p class="list-group-item-text">{{product.description}}</p>
       </a>

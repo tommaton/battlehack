@@ -1,6 +1,6 @@
 'use strict';
 
-window.APP.controller('MakeofferCtrl', function ($scope) {
+window.APP.controller('MakeofferCtrl', ['$scope', '$routeParams', '$location', 'notification', 'globalServices', 'Paypal', function ($scope, $routeParams, $location, notification, globalServices, Paypal) {
     function init() {
         if(!$scope.$parent.user.isLoggedIn){
             $location.path('login');
@@ -8,6 +8,8 @@ window.APP.controller('MakeofferCtrl', function ($scope) {
             $scope.productId = $routeParams.id;
 
             $scope.getProduct($scope.productId);
+
+            $scope.amount = null;
         }
     }
 
@@ -16,9 +18,19 @@ window.APP.controller('MakeofferCtrl', function ($scope) {
         globalServices.getProduct(productId).then(function(response) {
             $scope.$emit('NOTLOADING');
             $scope.product = response;
-            $scope.loadMap();
+        });
+    };
+
+    $scope.makePayment = function(price, desc) {
+        $scope.$emit('LOADING');
+        Paypal.makePayment(price, desc).then(function(response) {
+
+            $scope.paypalResponse = response;
+            location.href = $scope.paypalResponse.links[1].href;
+            notification.success('Redirecting...', 'You are being redirected to Paypal to complete your transaction.');
+            $scope.$emit('NOTLOADING');
         });
     };
 
     init();
-  });
+  }]);
