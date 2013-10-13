@@ -55,6 +55,10 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
       return (location.hash.split('/')[1] == "product");
     };
 
+    $scope.showLogo = function() {
+      return (location.hash == "#/home" || location.hash == "#/login");
+    }
+
     $scope.toggleSearchVisibility = function() {
       console.log($scope.isSearchFieldVisible);
       $scope.isSearchFieldVisible = !$scope.isSearchFieldVisible;
