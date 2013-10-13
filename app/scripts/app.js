@@ -38,7 +38,8 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
     }
 
     $scope.toggleSearchVisibility = function() {
-      $scope.isSearchVisible = !$scope.isSearchVisible;
+      console.log($scope.isSearchFieldVisible);
+      $scope.isSearchFieldVisible = !$scope.isSearchFieldVisible;
     };
 
 
