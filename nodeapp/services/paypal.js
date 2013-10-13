@@ -1,5 +1,5 @@
 var paypal_sdk = require('paypal-rest-sdk'),
-    config = require('./../config')
+    config = require('config')
 
 exports.paypal = function (price, description, callback) {
     paypal_sdk.configure({
@@ -9,9 +9,9 @@ exports.paypal = function (price, description, callback) {
     });
 
     var create_payment_json = {
-        "intent": "authorize",
+        "intent": "sale",
         "payer": {
-            "payment_method": "sale"
+            "payment_method": "paypal"
         },
         "redirect_urls": {
             "return_url": config.paypal.returnUrl,

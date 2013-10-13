@@ -1,5 +1,5 @@
 var twilioApi = require('twilio'),
-    config = require('./../config')
+    config = require('config')
 
 exports.sendMessage = function (toNumber, message, callback) {
     var client = new twilioApi.RestClient(config.twilio.sid, config.twilio.authToken);
