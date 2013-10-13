@@ -104,6 +104,10 @@ window.APP.config(function ($routeProvider) {
       templateUrl: 'views/makeOffer.html',
       controller: 'MakeofferCtrl'
     })
+    .when('/directions/:id', {
+      templateUrl: 'views/directions.html',
+      controller: 'DirectionsCtrl'
+    })
     .otherwise({
       redirectTo: '/'
     });
