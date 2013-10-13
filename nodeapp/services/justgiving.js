@@ -1,5 +1,5 @@
 var config = require('./../config'),
-    request = require('http'),
+    request = require('requestify'),
     Step = require('step'),
     _ = require('underscore.string');
 
