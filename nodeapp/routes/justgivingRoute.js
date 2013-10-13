@@ -2,7 +2,6 @@ var justgiving = require("./../services/justgiving")
 
 exports.donations = function (request, response) {
     var donationId = request.body.donationid;
-    var url = _.sprintf()
 
     justgiving.getDonation(donationId, function(data){
         response.send(data);

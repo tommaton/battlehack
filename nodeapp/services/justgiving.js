@@ -1,7 +1,7 @@
 var sys = require('util'),
     config = require('./../config'),
-    rest = require('./restler'),
-    _ = require('underscore');
+    rest = require('restler'),
+    _ = require('underscore.string');
 
 exports.getDonation = function (donationId, callback) {
     var url = _.sprintf(config.justgiving.getDonation, config.justgiving.apiKey, donationId);

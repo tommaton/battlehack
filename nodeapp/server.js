@@ -42,8 +42,8 @@ app.configure('production', function(){
 app.post('/paypal', paypal.route);
 app.get('/paypal/execute', paypal.executeRoute);
 app.post('/twilio', twilio.route);
-app.get('/justgiving/donation', justgiving.donations);
-app.get('/justgiving/localcharities', justgiving.localCharities);
+app.post('/justgiving/donation', justgiving.donations);
+app.post('/justgiving/localcharities', justgiving.localCharities);
 
 server.listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));
