@@ -10,7 +10,6 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
         if(loggedInState) {
           loggedInState = loggedinUserDetails.isLoggedIn;
 
-          console.log(loggedinUserDetails);
           $scope.user = {
               isLoggedIn: loggedInState,
               mobile: loggedinUserDetails.mobile,
@@ -117,6 +116,10 @@ window.APP.config(function ($routeProvider) {
     .when('/lender-response/:productId', {
       templateUrl: 'views/lender-response.html',
       controller: 'LenderResponseCtrl'
+    })
+    .when('/offerSuccess', {
+      templateUrl: 'views/offerSuccess.html',
+      controller: 'offerSuccessCtrl'
     })
     .otherwise({
       redirectTo: '/'
