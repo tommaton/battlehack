@@ -1,20 +1,23 @@
-var sys = require('util'),
-    config = require('./../config'),
-    rest = require('restler'),
+var config = require('./../config'),
+    request = require('http'),
+    Step = require('step'),
     _ = require('underscore.string');
 
 exports.getDonation = function (donationId, callback) {
     var url = _.sprintf(config.justgiving.getDonation, config.justgiving.apiKey, donationId);
+    var headers = {"headers":{"Content-type": "application/json"}};
 
-    rest.get(url).on('complete', function(data){
-        callback(data);
-    });
+
 }
 
 exports.getLocalCharities = function (area, callback) {
     var url = _.sprintf(config.justgiving.searchCharities, config.justgiving.apiKey, area);
+    console.log(url);
+    var headers = {"headers":{"Content-type": "application/json"}};
 
-    rest.get(url).on('complete', function(data){
+    request.
+
+    request.get(url, headers, function(data){
         callback(data);
-    });
+    })
 }

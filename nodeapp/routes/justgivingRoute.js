@@ -9,7 +9,7 @@ exports.donations = function (request, response) {
 };
 
 exports.localCharities = function (request, response) {
-    var area = request.body.area;
+    var area = request.params.area;
 
     justgiving.getLocalCharities(area, function(data){
         response.send(data);

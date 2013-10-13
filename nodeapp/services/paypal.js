@@ -9,7 +9,7 @@ exports.paypal = function (price, description, callback) {
     });
 
     var create_payment_json = {
-        "intent": "sale",
+        "intent": "authorize",
         "payer": {
             "payment_method": "paypal"
         },
@@ -32,17 +32,27 @@ exports.paypal = function (price, description, callback) {
         }
 
         if (response) {
-            console.log("Create Payment Response");
-
             callback(response);
         }
     });
 }
 
-exports.executePayment = function (paymentId, payerId, callback) {
+exports.completePayment = function (paymentId, callback) {
     var payerIdJson = { "payer_id": payerId };
 
     paypal_sdk.payment.execute(paymentId, payerIdJson, function(error, response){
+        if(error){
+            callback('Error: ' + error);
+        }
+        else{
+            callback(response);
+        }
+    });
+}
+
+exports.cancelPayment = function (paymentId, callback) {
+
+    paypal_sdk.payment.void(paymentId, function(error, response){
         if(error){
             callback('Error: ' + error);
         }
