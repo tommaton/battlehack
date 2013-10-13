@@ -17,7 +17,7 @@ exports.paypal = function (price, description, productid, username, callback) {
             "payment_method": "paypal"
         },
         "redirect_urls": {
-            "return_url": config.paypal.returnUrl,
+            "return_url": returnUrl,
             "cancel_url": config.paypal.cancelUrl
         },
         "transactions": [{
