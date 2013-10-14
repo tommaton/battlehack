@@ -4,7 +4,7 @@ BattleHack
 Neighbour.ly Mobile Web App
 ---------------------------
 
-Attendees
+#### Attendees
 - Thomas Maton
 - Owain Llewellyn
 - Francis Gilbert
@@ -12,22 +12,22 @@ Attendees
 
 ## Getting Started
 
-### Installing Compass
+#### Installing Compass
 - `gem install` compass
 
-### Installing Yeoman
+#### Installing Yeoman
 - `npm install -g yo`
 - `npm install -g generator-angular`
 
-### Installing Dependencies
+#### Installing Dependencies
 - `npm install`
 - `Bower Install`
 
-### Building and Running Codebase
+#### Building and Running Codebase
 - `Grunt`
 - `Grunt server`
 
-### Server Dependency
+#### Server Dependency
 Inside /nodeapp server run
 - `node server `
 
