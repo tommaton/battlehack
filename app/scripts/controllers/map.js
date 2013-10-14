@@ -28,7 +28,7 @@ window.APP.controller('MapCtrl', ['$location', '$scope', 'globalServices', funct
             currentLocation = JSON.parse(sessionStorage.getItem('currentLocation')),
             markers = [],
             TOUCH = nokia.maps.dom.Page.browser.touch,
-            EVENT_CLICK = TOUCH ? "tap" : "click",
+            EVENT_CLICK = TOUCH ? 'tap' : 'click',
             infoBubbles = new nokia.maps.map.component.InfoBubbles();
 
         var map = new nokia.maps.map.Display(mapContainer, {
@@ -49,14 +49,15 @@ window.APP.controller('MapCtrl', ['$location', '$scope', 'globalServices', funct
             map.objects.add(standardMarker);
 
         var standardMarkerProps = [
-            null, // No properties object is specified, so default ones will be used
-            {                
+            null,
+            {
                 brush: {
-                    // fillcolor of brush
-                    color: "#F80"
+                    color: '#F80'
                 }
             }
-        ]; // Little counter to loop over above properties object
+        ];
+
+        var productMarker;
 
         // loop through and add each marker
         for (var i = $scope.products.length - 1; i >= 0; i--) {
@@ -64,21 +65,23 @@ window.APP.controller('MapCtrl', ['$location', '$scope', 'globalServices', funct
                 userLocation = product.user.location;
             
 
-           var productMarker = new nokia.maps.map.StandardMarker(
+           productMarker = new nokia.maps.map.StandardMarker(
                 [parseFloat(userLocation.lat), parseFloat(userLocation.long)],
                 standardMarkerProps[i]
             );
 
             productMarker.html = '<div class="product-bubble"><h4>'+product.title+'</h4><p>'+product.description+'</p><p><a href="#/product/'+product.id+'" title="'+product.title+'">Go to item</a></p></div>';
 
-            productMarker.addListener(EVENT_CLICK, function(evt) { 
+            
+
+            markers.push(productMarker);
+        }
+
+        productMarker.addListener(EVENT_CLICK, function(evt) {
                 infoBubbles.openBubble(evt.target.html, evt.target.coordinate);
             }, false);
 
-            markers.push(productMarker);
-        };    
-
-        map.objects.addAll(markers);        
+        map.objects.addAll(markers);
     };
 
     init();

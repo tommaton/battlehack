@@ -5,7 +5,7 @@ window.APP.directive('notifications', ['notification', function(notification){
             restrict: 'A',
             scope: {},
             templateUrl: 'views/partials/notifications.html',
-            controller: ['$scope', '$element', function NotificationsCtrl($scope, $element){
+            controller: ['$scope', function NotificationsCtrl($scope){
                 $scope.queue = notification.getQueue();
                 $scope.isNotificationVisible = true;
 
@@ -20,4 +20,4 @@ window.APP.directive('notifications', ['notification', function(notification){
                 });
             }
         ]};
-    }])
+    }]);

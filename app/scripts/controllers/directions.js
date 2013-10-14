@@ -31,7 +31,7 @@ window.APP.controller('DirectionsCtrl', ['$scope', '$routeParams', 'globalServic
             
 
         var onRouteCalculated = function (observedRouter, key, value) {
-            if (value == "finished") {
+            if (value === 'finished') {
                 var routes = observedRouter.getRoutes();
                 
                 //create the default map representation of a route
@@ -39,16 +39,14 @@ window.APP.controller('DirectionsCtrl', ['$scope', '$routeParams', 'globalServic
                 map.objects.add(mapRoute);
                 
                 //Zoom to the bounding box of the route
-                map.zoomTo(mapRoute.getBoundingBox(), false, "default");
-            } else if (value == "failed") {
-                alert("The routing request failed.");
-            }
+                map.zoomTo(mapRoute.getBoundingBox(), false, 'default');
+            } else if (value === 'failed') {}
         };
 
         /* We create on observer on router's "state" property so the above created
          * onRouteCalculated we be called once the route is calculated
          */
-        router.addObserver("state", onRouteCalculated);
+        router.addObserver('state', onRouteCalculated);
 
         // Create waypoints
         var waypoints = new nokia.maps.routing.WaypointParameterList();
@@ -61,14 +59,14 @@ window.APP.controller('DirectionsCtrl', ['$scope', '$routeParams', 'globalServic
          * See for the mode options the "nokia.maps.routing.Mode" section in the developer's guide
          */
         var modes = [{
-            type: "shortest", 
-            transportModes: ["car"],
-            options: "avoidTollroad",
-            trafficMode: "default"
+            type: 'shortest',
+            transportModes: ['car'],
+            options: 'avoidTollroad',
+            trafficMode: 'default'
         }];
 
         // Trigger route calculation after the map emmits the "displayready" event
-        map.addListener("displayready", function () {
+        map.addListener('displayready', function () {
             router.calculateRoute(waypoints, modes);
         }, false);
         

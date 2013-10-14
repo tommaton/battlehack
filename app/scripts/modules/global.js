@@ -10,7 +10,7 @@ neighbourly.core.global = {
 
         $container.css('height', windowHeight);
 
-        if (!sessionStorage.getItem("currentLocation")) {
+        if (!sessionStorage.getItem('currentLocation')) {
             neighbourly.core.global.getLocation();
         }
 

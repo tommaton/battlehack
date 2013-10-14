@@ -27,7 +27,7 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
         } else {
           heartEl.removeClass('active');
         }
-      })
+      });
 
       $scope.isLoading = false;
 
@@ -48,16 +48,16 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
     };
 
     $scope.isHome = function() {
-      return (location.hash == "#/home");
+      return (location.hash === '#/home');
     };
 
     $scope.isProduct = function() {
-      return (location.hash.split('/')[1] == "product");
+      return (location.hash.split('/')[1] === 'product');
     };
 
     $scope.showLogo = function() {
-      return (location.hash == "#/home" || location.hash == "#/login");
-    }
+      return (location.hash === '#/home' || location.hash === '#/login');
+    };
 
     $scope.toggleSearchVisibility = function() {
       console.log($scope.isSearchFieldVisible);
@@ -70,7 +70,7 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
         isLoggedIn: false,
         email: null,
         password: null
-      }
+      };
       localStorage.clear('user');
       $location.path('login');
 

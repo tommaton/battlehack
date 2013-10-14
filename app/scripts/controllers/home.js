@@ -25,25 +25,25 @@ window.APP.controller('HomeCtrl', ['$location', '$scope', 'globalServices', func
 
         switch(category) {
             case 'living-room':
-                iconClass = 'print'
+                iconClass = 'print';
                 break;
             case 'garden':
-                iconClass = 'tree-conifer'
-                break;          
+                iconClass = 'tree-conifer';
+                break;
             case 'kitchen':
-                iconClass = 'cutlery'
+                iconClass = 'cutlery';
                 break;
             case 'tools':
-                iconClass = 'wrench'
+                iconClass = 'wrench';
                 break;
             case 'other':
-                iconClass = 'question-sign'
+                iconClass = 'question-sign';
                 break;
             case 'bedroom':
-                iconClass = 'adjust'
+                iconClass = 'adjust';
                 break;
             default:
-                iconClass = 'leaf'
+                iconClass = 'leaf';
                 break;
         }
 

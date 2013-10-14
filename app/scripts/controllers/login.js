@@ -10,7 +10,7 @@ window.APP.controller('LoginCtrl', ['$scope', 'notification', '$location', funct
         $scope.user.password = password;
         $scope.user.isLoggedIn = true;
         $scope.user.mobile = 447837043238;
-        $scope.user.name = "Owain Llewellyn";
+        $scope.user.name = 'Owain Llewellyn';
         notification.success('Login Success!', 'Welcome Back, ' + $scope.user.name.split(' ')[0]);
         $scope.updateUser($scope.user);
     };
@@ -18,9 +18,9 @@ window.APP.controller('LoginCtrl', ['$scope', 'notification', '$location', funct
     $scope.updateUser = function(user) {
         $scope.$parent.user = user;
 
-        localStorage.setItem("user", JSON.stringify($scope.$parent.user));
+        localStorage.setItem('user', JSON.stringify($scope.$parent.user));
         $location.path('home');
-    }
+    };
 
     init();
 }]);

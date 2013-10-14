@@ -40,8 +40,7 @@ window.APP.controller('LenderResponseCtrl', ['$scope', '$routeParams', 'notifica
                 notification.success('Your lending response', 'Your Neighbour will receieve your rejection text shortly.');
             });
         }
-        
-    }
+    };
 
     init();
 

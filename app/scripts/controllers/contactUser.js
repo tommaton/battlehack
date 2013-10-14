@@ -14,13 +14,13 @@ window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', 'notificatio
             $scope.getProduct($scope.productId);
         }
 
-        $scope.count = "0";
+        $scope.count = '0';
 
         var commentEl = angular.element('#msg');
 
-        commentEl.on('keyup', function(e) {
-            $scope.count = (118 - parseInt(this.value.length));
-        })
+        commentEl.on('keyup', function() {
+            $scope.count = (118 - parseInt(this.value.length,0));
+        });
     }
 
     $scope.getProduct = function(productId) {
@@ -31,7 +31,7 @@ window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', 'notificatio
         });
     };
 
-    $scope.sendTxt = function(number) {
+    $scope.sendTxt = function() {
         $scope.$emit('LOADING');
         Twillio.sendTxt($scope.product.user.mobile, 'Neighbour.ly: ' + $scope.$parent.user.name + ' has a question about your ' + $scope.product.title + '.' + $scope.msg).then(function(response) {
             $scope.$emit('NOTLOADING');
@@ -40,7 +40,7 @@ window.APP.controller('ContactuserCtrl', ['$scope', '$routeParams', 'notificatio
             notification.success('Question Sent', 'Your Neighbour will receieve your text shortly.');
 
         });
-    }
+    };
 
     init();
 

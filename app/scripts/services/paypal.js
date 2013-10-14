@@ -6,7 +6,7 @@ window.APP.service('Paypal', ['$http', '$q', function Paypal($http, $q) {
     this.makePayment = function(price, description) {
         var deferred = $q.defer();
         console.log(arguments);
-        $http.post('http://localhost:3000/paypal', {"price" : price, "description": description})
+        $http.post('http://localhost:3000/paypal', {'price' : price, 'description': description})
             .success(function(data) {
                 return deferred.resolve(data);
             })
