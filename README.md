@@ -28,7 +28,7 @@ Neighbour.ly Mobile Web App
 - `Grunt server`
 
 #### Server Dependency
-Inside /nodeapp server run
+Inside /nodeapp run
 - `node server `
 
 Optional Grunt Commands (Development Use)
