@@ -8,7 +8,6 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           loggedinUserDetails = JSON.parse(localStorage.getItem('user')),
           heartEl = angular.element('.glyphicon-heart');
 
-
         if(loggedInState) {
           loggedInState = loggedinUserDetails.isLoggedIn;
 
@@ -28,6 +27,22 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
           heartEl.removeClass('active');
         }
       });
+
+      $scope.urlParam = function(a) {
+        if (a === '') {
+          return {};
+        }
+        var b = {};
+        for (var i = 0; i < a.length; ++i)
+        {
+            var p=a[i].split('=');
+            if (p.length !== 2) {
+                b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, ' '));
+            }
+            
+        }
+        return b;
+      };
 
       $scope.isLoading = false;
 
@@ -77,7 +92,7 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
     };
 
     $scope.isUserLoggedIn = function() {
-      
+
         if(!$scope.user.isLoggedIn) {
             return false;
         } else {
@@ -87,7 +102,7 @@ window.APP.controller('AppCtrl', ['$scope', '$location', function($scope, $locat
 
     init();
 }]);
-  
+
 window.APP.config(function ($routeProvider) {
   $routeProvider
     .when('/', {

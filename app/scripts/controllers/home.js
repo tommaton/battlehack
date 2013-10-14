@@ -2,13 +2,13 @@
 
 window.APP.controller('HomeCtrl', ['$location', '$scope', 'globalServices', function ($location, $scope, globalServices) {
     function init() {
-        if(!$scope.$parent.user.isLoggedIn){
-            $location.path('login');
-        } else {
+        if($scope.$parent.user){
             $scope.products = null;
             $scope.getProducts();
             $scope.$parent.isTopNavVisible = true;
             $scope.searchText = null;
+        } else {
+            $location.path('login');
         }
     }
     

@@ -28,7 +28,7 @@ window.APP.controller('LenderResponseCtrl', ['$scope', '$routeParams', 'notifica
 
         $scope.$emit('LOADING');
         if(action === 'accept') {
-            Twillio.sendTxt(userDetails.mobile, 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has accepted the lending of their ' + $scope.product.title + '.').then(function(response) {
+            Twillio.sendTxt('447779232043', 'Neighbour.ly: The User, ' + $scope.product.user.name + ' has accepted the lending of their ' + $scope.product.title + '.').then(function(response) {
                 $scope.$emit('NOTLOADING');
                 $scope.response = response;
                 notification.success('Your lending response', 'Your Neighbour will receieve your acceptance text shortly.');
