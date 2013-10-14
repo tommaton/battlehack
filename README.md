@@ -10,20 +10,28 @@ Attendees
 - Francis Gilbert
 - Abid Din
 
-Getting Started
+## Getting Started
 
-Installing Compass
+# Installing Compass
 - gem install compass
 
-Installing Yeoman
+# Installing Yeoman
 - npm install -g yo
 - npm install -g generator-angular
+
+# Installing Dependencies
 - npm install
 - Bower Install
+
+# Building and Running Codebase
 - Grunt
 - Grunt server
 
-Run either
+# Server Dependency
+Inside /nodeapp server run
+- node server 
+
+Optional Grunt Commands (Development Use)
 - grunt test (test your app)
 - grunt server (preview your app)
 - grunt (build the application for deployment)
