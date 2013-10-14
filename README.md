@@ -12,29 +12,29 @@ Attendees
 
 ## Getting Started
 
-# Installing Compass
-- gem install compass
+### Installing Compass
+- `gem install` compass
 
-# Installing Yeoman
-- npm install -g yo
-- npm install -g generator-angular
+### Installing Yeoman
+- `npm install -g yo`
+- `npm install -g generator-angular`
 
-# Installing Dependencies
-- npm install
-- Bower Install
+### Installing Dependencies
+- `npm install`
+- `Bower Install`
 
-# Building and Running Codebase
-- Grunt
-- Grunt server
+### Building and Running Codebase
+- `Grunt`
+- `Grunt server`
 
-# Server Dependency
+### Server Dependency
 Inside /nodeapp server run
-- node server 
+- `node server `
 
 Optional Grunt Commands (Development Use)
-- grunt test (test your app)
-- grunt server (preview your app)
-- grunt (build the application for deployment)
+- `grunt test` (test your app)
+- `grunt server` (preview your app)
+- `grunt` (build the application for deployment)
 
 ##Login
 Paypal Sandbox Login
